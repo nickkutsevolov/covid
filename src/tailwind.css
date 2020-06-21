@@ -1,0 +1,33 @@
+@tailwind base;
+
+h1 {
+    font-size: 2rem;
+    @apply text-primary;
+    @apply font-primary;
+    @apply my-2;
+}
+h2 {
+    @apply text-3xl;
+    @apply text-primary;
+    @apply font-primary;
+    @apply my-2;
+}
+h3 {
+    @apply text-xl;
+    @apply text-secondary;
+    @apply font-primary;
+}
+p  {
+    @apply text-sm;
+    @apply text-neutral;
+    @apply font-secondary;
+}
+.table-cell {
+    @apply border;
+    @apply border-collapse;
+}
+@tailwind components;
+
+@tailwind utilities;
+
+@import url('./fonts/fonts.css');

@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap');
+@font-face {
+    font-family: 'Gelion Medium';
+    src: url('gelion-medium-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gelion Regular';
+    src: url('gelion-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
