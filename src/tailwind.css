@@ -1,5 +1,9 @@
 @tailwind base;
 
+html {
+    overflow-x: hidden;
+}
+
 h1 {
     font-size: 2rem;
     @apply text-primary;

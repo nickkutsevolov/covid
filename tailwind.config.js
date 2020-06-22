@@ -3,7 +3,8 @@ module.exports = {
     fontFamily: {
       'primary': ['"Red Hat Display"', 'sans-serif'],
       'secondary': ['"Gelion Medium"', 'sans-serif'],
-      'secondary-rg': ['"Gelion Regular"', 'sans-serif']
+      'secondary-rg': ['"Gelion Regular"', 'sans-serif'],
+      'mono': ['Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace']
     },
     extend: {
       colors: {

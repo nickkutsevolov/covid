@@ -5,10 +5,10 @@ function Row ({data}) {
     if(data.nodata) return <div>{data.nodata}</div>;
     return (
         <div className="table-row">
-            <div className="table-cell">{ data.Country || 'Global' }</div>
-            <div className="table-cell text-right">{ data.TotalConfirmed }<br />(+{ data.NewConfirmed })</div>
-            <div className="table-cell text-right">{ data.TotalDeaths }<br />(+{ data.NewDeaths })</div>
-            <div className="table-cell text-right">{ data.TotalRecovered }<br />(+{ data.NewRecovered })</div>
+            <div className="table-cell font-secondary p-1">{ data.Country || 'Global' }</div>
+            <div className="table-cell text-right p-1">{ data.TotalConfirmed ? data.TotalConfirmed.toLocaleString() : "0" }<br />+{ data.NewConfirmed ? data.NewConfirmed.toLocaleString() : "0" }</div>
+            <div className="table-cell text-right p-1">{ data.TotalDeaths ? data.TotalDeaths.toLocaleString() : "0" }<br />+{ data.NewDeaths ? data.NewDeaths.toLocaleString() : "0" }</div>
+            <div className="table-cell text-right p-1">{ data.TotalRecovered ? data.TotalRecovered.toLocaleString() : "0" }<br />+{ data.NewRecovered ? data.NewRecovered.toLocaleString() : "0" }</div>
         </div>
     )
 }
