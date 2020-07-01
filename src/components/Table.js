@@ -10,12 +10,12 @@ function Table() {
     const [borders, setBorders] = useState([]);
     const [showBorders, toggleBorders ] = useState(true);
 
+    
     useEffect(() => {
         fetch('https://api.covid19api.com/summary')
             .then(data => data.json())
             .then(data => {
                 setGlobal(data.Global);
-                console.log(data.Global.TotalConfirmed.toLocaleString())
                 setTop(data.Countries.sort((a, b) => b.TotalConfirmed - a.TotalConfirmed).slice(0, 5));
                 setLocal(data.Countries.find(el => el.CountryCode === localName));
 
@@ -23,6 +23,7 @@ function Table() {
                 fetch('https://restcountries.eu/rest/v2/all')
                     .then(res => res.json())
                     .then(res => {
+                        if(localName)
                         setBorders(res.find(i => i.alpha2Code === localName).borders
                             .map(j => res.find(k => k.alpha3Code === j).alpha2Code)
                             .map(i => data.Countries.find(j => j.CountryCode === i) ? data.Countries.find(j => j.CountryCode === i) : false));
@@ -33,16 +34,15 @@ function Table() {
 
     return (
         <div className="container mx-auto p-4">
-            <h2 className="text-center">Statistics</h2>
             <div  className="flex justify-center">
                 <div className="p-4">
                     <h3>Global&amp;top5</h3>
                     <div className="table w-full">
-                        <div className="table-row text-xl font-secondary">
+                        <div className="table-row text-xl">
                             <div className="table-cell p-1">Country</div>
                             <div className="table-cell text-right p-1">Confirmed</div>
-                            <div className="table-cell bg-secondary text-right p-1">Deaths</div>
-                            <div className="table-cell bg-primary text-right p-1">Recovered</div>
+                            <div className="table-cell text-right p-1">Deaths</div>
+                            <div className="table-cell text-right p-1">Recovered</div>
                         </div>
                         <Row data={global} />
                         {top.map((el, index) => <Row data={el} key={"top" + index} />)}
@@ -54,11 +54,11 @@ function Table() {
                         toggleBorders(bord);
                         }} />
                     <div className="table w-full">
-                        <div className="table-row text-xl font-secondary">
+                        <div className="table-row text-xl">
                             <div className="table-cell p-1">Country</div>
                             <div className="table-cell text-right p-1">Confirmed</div>
-                            <div className="table-cell bg-secondary text-right p-1">Deaths</div>
-                            <div className="table-cell bg-primary text-right p-1">Recovered</div>
+                            <div className="table-cell text-right p-1">Deaths</div>
+                            <div className="table-cell text-right p-1">Recovered</div>
                         </div>
                         <Row data={local} />
                         {

@@ -555,7 +555,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 /**
@@ -593,42 +593,6 @@ video {
 
 html {
   overflow-x: hidden;
-}
-
-h1 {
-  font-size: 2rem;
-  --text-opacity: 1;
-  color: #035755;
-  color: rgba(3, 87, 85, var(--text-opacity));
-  font-family: "Red Hat Display", sans-serif;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-h2 {
-  font-size: 1.875rem;
-  --text-opacity: 1;
-  color: #035755;
-  color: rgba(3, 87, 85, var(--text-opacity));
-  font-family: "Red Hat Display", sans-serif;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-h3 {
-  font-size: 1.25rem;
-  --text-opacity: 1;
-  color: #fa5652;
-  color: rgba(250, 86, 82, var(--text-opacity));
-  font-family: "Red Hat Display", sans-serif;
-}
-
-p  {
-  font-size: 0.875rem;
-  --text-opacity: 1;
-  color: #4b4f51;
-  color: rgba(75, 79, 81, var(--text-opacity));
-  font-family: "Gelion Medium", sans-serif;
 }
 
 .table-cell {
@@ -6226,14 +6190,6 @@ p  {
 
 .font-secondary {
   font-family: "Gelion Medium", sans-serif;
-}
-
-.font-secondary-rg {
-  font-family: "Gelion Regular", sans-serif;
-}
-
-.font-mono {
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .font-hairline {
@@ -23804,14 +23760,6 @@ p  {
     font-family: "Gelion Medium", sans-serif;
   }
 
-  .sm\:font-secondary-rg {
-    font-family: "Gelion Regular", sans-serif;
-  }
-
-  .sm\:font-mono {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  }
-
   .sm\:font-hairline {
     font-weight: 100;
   }
@@ -41377,14 +41325,6 @@ p  {
 
   .md\:font-secondary {
     font-family: "Gelion Medium", sans-serif;
-  }
-
-  .md\:font-secondary-rg {
-    font-family: "Gelion Regular", sans-serif;
-  }
-
-  .md\:font-mono {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
   .md\:font-hairline {
@@ -58954,14 +58894,6 @@ p  {
     font-family: "Gelion Medium", sans-serif;
   }
 
-  .lg\:font-secondary-rg {
-    font-family: "Gelion Regular", sans-serif;
-  }
-
-  .lg\:font-mono {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  }
-
   .lg\:font-hairline {
     font-weight: 100;
   }
@@ -76527,14 +76459,6 @@ p  {
 
   .xl\:font-secondary {
     font-family: "Gelion Medium", sans-serif;
-  }
-
-  .xl\:font-secondary-rg {
-    font-family: "Gelion Regular", sans-serif;
-  }
-
-  .xl\:font-mono {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
   .xl\:font-hairline {

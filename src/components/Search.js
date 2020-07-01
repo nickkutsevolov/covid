@@ -56,7 +56,7 @@ function Search( {getResult}) {
                     Show neighbours:
                         <input type="checkbox" onChange={e => switchNeigh(e.target.checked)} checked={neigh} />
                 </label>
-                <button type="submit" className="bg-secondary text-white p-1 rounded">Search</button>
+                <button type="submit" className="bg-blue-400 text-white p-1 rounded">Search</button>
             </form>
         </div>
     )
