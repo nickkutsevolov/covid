@@ -1710,20 +1710,20 @@ html {
 
 .divide-primary > :not(template) ~ :not(template) {
   --divide-opacity: 1;
-  border-color: #035755;
-  border-color: rgba(3, 87, 85, var(--divide-opacity));
+  border-color: cadetblue;
+  border-color: rgba(95, 158, 160, var(--divide-opacity));
 }
 
 .divide-secondary > :not(template) ~ :not(template) {
   --divide-opacity: 1;
-  border-color: #fa5652;
-  border-color: rgba(250, 86, 82, var(--divide-opacity));
+  border-color: crimson;
+  border-color: rgba(220, 20, 60, var(--divide-opacity));
 }
 
 .divide-neutral > :not(template) ~ :not(template) {
   --divide-opacity: 1;
-  border-color: #4b4f51;
-  border-color: rgba(75, 79, 81, var(--divide-opacity));
+  border-color: dimgrey;
+  border-color: rgba(105, 105, 105, var(--divide-opacity));
 }
 
 .divide-opacity-0 > :not(template) ~ :not(template) {
@@ -2372,20 +2372,20 @@ html {
 
 .bg-primary {
   --bg-opacity: 1;
-  background-color: #035755;
-  background-color: rgba(3, 87, 85, var(--bg-opacity));
+  background-color: cadetblue;
+  background-color: rgba(95, 158, 160, var(--bg-opacity));
 }
 
 .bg-secondary {
   --bg-opacity: 1;
-  background-color: #fa5652;
-  background-color: rgba(250, 86, 82, var(--bg-opacity));
+  background-color: crimson;
+  background-color: rgba(220, 20, 60, var(--bg-opacity));
 }
 
 .bg-neutral {
   --bg-opacity: 1;
-  background-color: #4b4f51;
-  background-color: rgba(75, 79, 81, var(--bg-opacity));
+  background-color: dimgrey;
+  background-color: rgba(105, 105, 105, var(--bg-opacity));
 }
 
 .hover\:bg-transparent:hover {
@@ -2950,20 +2950,20 @@ html {
 
 .hover\:bg-primary:hover {
   --bg-opacity: 1;
-  background-color: #035755;
-  background-color: rgba(3, 87, 85, var(--bg-opacity));
+  background-color: cadetblue;
+  background-color: rgba(95, 158, 160, var(--bg-opacity));
 }
 
 .hover\:bg-secondary:hover {
   --bg-opacity: 1;
-  background-color: #fa5652;
-  background-color: rgba(250, 86, 82, var(--bg-opacity));
+  background-color: crimson;
+  background-color: rgba(220, 20, 60, var(--bg-opacity));
 }
 
 .hover\:bg-neutral:hover {
   --bg-opacity: 1;
-  background-color: #4b4f51;
-  background-color: rgba(75, 79, 81, var(--bg-opacity));
+  background-color: dimgrey;
+  background-color: rgba(105, 105, 105, var(--bg-opacity));
 }
 
 .focus\:bg-transparent:focus {
@@ -3528,20 +3528,20 @@ html {
 
 .focus\:bg-primary:focus {
   --bg-opacity: 1;
-  background-color: #035755;
-  background-color: rgba(3, 87, 85, var(--bg-opacity));
+  background-color: cadetblue;
+  background-color: rgba(95, 158, 160, var(--bg-opacity));
 }
 
 .focus\:bg-secondary:focus {
   --bg-opacity: 1;
-  background-color: #fa5652;
-  background-color: rgba(250, 86, 82, var(--bg-opacity));
+  background-color: crimson;
+  background-color: rgba(220, 20, 60, var(--bg-opacity));
 }
 
 .focus\:bg-neutral:focus {
   --bg-opacity: 1;
-  background-color: #4b4f51;
-  background-color: rgba(75, 79, 81, var(--bg-opacity));
+  background-color: dimgrey;
+  background-color: rgba(105, 105, 105, var(--bg-opacity));
 }
 
 .bg-opacity-0 {
@@ -4246,20 +4246,20 @@ html {
 
 .border-primary {
   --border-opacity: 1;
-  border-color: #035755;
-  border-color: rgba(3, 87, 85, var(--border-opacity));
+  border-color: cadetblue;
+  border-color: rgba(95, 158, 160, var(--border-opacity));
 }
 
 .border-secondary {
   --border-opacity: 1;
-  border-color: #fa5652;
-  border-color: rgba(250, 86, 82, var(--border-opacity));
+  border-color: crimson;
+  border-color: rgba(220, 20, 60, var(--border-opacity));
 }
 
 .border-neutral {
   --border-opacity: 1;
-  border-color: #4b4f51;
-  border-color: rgba(75, 79, 81, var(--border-opacity));
+  border-color: dimgrey;
+  border-color: rgba(105, 105, 105, var(--border-opacity));
 }
 
 .hover\:border-transparent:hover {
@@ -4824,20 +4824,20 @@ html {
 
 .hover\:border-primary:hover {
   --border-opacity: 1;
-  border-color: #035755;
-  border-color: rgba(3, 87, 85, var(--border-opacity));
+  border-color: cadetblue;
+  border-color: rgba(95, 158, 160, var(--border-opacity));
 }
 
 .hover\:border-secondary:hover {
   --border-opacity: 1;
-  border-color: #fa5652;
-  border-color: rgba(250, 86, 82, var(--border-opacity));
+  border-color: crimson;
+  border-color: rgba(220, 20, 60, var(--border-opacity));
 }
 
 .hover\:border-neutral:hover {
   --border-opacity: 1;
-  border-color: #4b4f51;
-  border-color: rgba(75, 79, 81, var(--border-opacity));
+  border-color: dimgrey;
+  border-color: rgba(105, 105, 105, var(--border-opacity));
 }
 
 .focus\:border-transparent:focus {
@@ -5402,20 +5402,20 @@ html {
 
 .focus\:border-primary:focus {
   --border-opacity: 1;
-  border-color: #035755;
-  border-color: rgba(3, 87, 85, var(--border-opacity));
+  border-color: cadetblue;
+  border-color: rgba(95, 158, 160, var(--border-opacity));
 }
 
 .focus\:border-secondary:focus {
   --border-opacity: 1;
-  border-color: #fa5652;
-  border-color: rgba(250, 86, 82, var(--border-opacity));
+  border-color: crimson;
+  border-color: rgba(220, 20, 60, var(--border-opacity));
 }
 
 .focus\:border-neutral:focus {
   --border-opacity: 1;
-  border-color: #4b4f51;
-  border-color: rgba(75, 79, 81, var(--border-opacity));
+  border-color: dimgrey;
+  border-color: rgba(105, 105, 105, var(--border-opacity));
 }
 
 .border-opacity-0 {
@@ -10728,74 +10728,74 @@ html {
 
 .placeholder-primary::-webkit-input-placeholder {
   --placeholder-opacity: 1;
-  color: #035755;
-  color: rgba(3, 87, 85, var(--placeholder-opacity));
+  color: cadetblue;
+  color: rgba(95, 158, 160, var(--placeholder-opacity));
 }
 
 .placeholder-primary:-ms-input-placeholder {
   --placeholder-opacity: 1;
-  color: #035755;
-  color: rgba(3, 87, 85, var(--placeholder-opacity));
+  color: cadetblue;
+  color: rgba(95, 158, 160, var(--placeholder-opacity));
 }
 
 .placeholder-primary::-ms-input-placeholder {
   --placeholder-opacity: 1;
-  color: #035755;
-  color: rgba(3, 87, 85, var(--placeholder-opacity));
+  color: cadetblue;
+  color: rgba(95, 158, 160, var(--placeholder-opacity));
 }
 
 .placeholder-primary::placeholder {
   --placeholder-opacity: 1;
-  color: #035755;
-  color: rgba(3, 87, 85, var(--placeholder-opacity));
+  color: cadetblue;
+  color: rgba(95, 158, 160, var(--placeholder-opacity));
 }
 
 .placeholder-secondary::-webkit-input-placeholder {
   --placeholder-opacity: 1;
-  color: #fa5652;
-  color: rgba(250, 86, 82, var(--placeholder-opacity));
+  color: crimson;
+  color: rgba(220, 20, 60, var(--placeholder-opacity));
 }
 
 .placeholder-secondary:-ms-input-placeholder {
   --placeholder-opacity: 1;
-  color: #fa5652;
-  color: rgba(250, 86, 82, var(--placeholder-opacity));
+  color: crimson;
+  color: rgba(220, 20, 60, var(--placeholder-opacity));
 }
 
 .placeholder-secondary::-ms-input-placeholder {
   --placeholder-opacity: 1;
-  color: #fa5652;
-  color: rgba(250, 86, 82, var(--placeholder-opacity));
+  color: crimson;
+  color: rgba(220, 20, 60, var(--placeholder-opacity));
 }
 
 .placeholder-secondary::placeholder {
   --placeholder-opacity: 1;
-  color: #fa5652;
-  color: rgba(250, 86, 82, var(--placeholder-opacity));
+  color: crimson;
+  color: rgba(220, 20, 60, var(--placeholder-opacity));
 }
 
 .placeholder-neutral::-webkit-input-placeholder {
   --placeholder-opacity: 1;
-  color: #4b4f51;
-  color: rgba(75, 79, 81, var(--placeholder-opacity));
+  color: dimgrey;
+  color: rgba(105, 105, 105, var(--placeholder-opacity));
 }
 
 .placeholder-neutral:-ms-input-placeholder {
   --placeholder-opacity: 1;
-  color: #4b4f51;
-  color: rgba(75, 79, 81, var(--placeholder-opacity));
+  color: dimgrey;
+  color: rgba(105, 105, 105, var(--placeholder-opacity));
 }
 
 .placeholder-neutral::-ms-input-placeholder {
   --placeholder-opacity: 1;
-  color: #4b4f51;
-  color: rgba(75, 79, 81, var(--placeholder-opacity));
+  color: dimgrey;
+  color: rgba(105, 105, 105, var(--placeholder-opacity));
 }
 
 .placeholder-neutral::placeholder {
   --placeholder-opacity: 1;
-  color: #4b4f51;
-  color: rgba(75, 79, 81, var(--placeholder-opacity));
+  color: dimgrey;
+  color: rgba(105, 105, 105, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-transparent:focus::-webkit-input-placeholder {
@@ -13040,74 +13040,74 @@ html {
 
 .focus\:placeholder-primary:focus::-webkit-input-placeholder {
   --placeholder-opacity: 1;
-  color: #035755;
-  color: rgba(3, 87, 85, var(--placeholder-opacity));
+  color: cadetblue;
+  color: rgba(95, 158, 160, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-primary:focus:-ms-input-placeholder {
   --placeholder-opacity: 1;
-  color: #035755;
-  color: rgba(3, 87, 85, var(--placeholder-opacity));
+  color: cadetblue;
+  color: rgba(95, 158, 160, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-primary:focus::-ms-input-placeholder {
   --placeholder-opacity: 1;
-  color: #035755;
-  color: rgba(3, 87, 85, var(--placeholder-opacity));
+  color: cadetblue;
+  color: rgba(95, 158, 160, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-primary:focus::placeholder {
   --placeholder-opacity: 1;
-  color: #035755;
-  color: rgba(3, 87, 85, var(--placeholder-opacity));
+  color: cadetblue;
+  color: rgba(95, 158, 160, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-secondary:focus::-webkit-input-placeholder {
   --placeholder-opacity: 1;
-  color: #fa5652;
-  color: rgba(250, 86, 82, var(--placeholder-opacity));
+  color: crimson;
+  color: rgba(220, 20, 60, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-secondary:focus:-ms-input-placeholder {
   --placeholder-opacity: 1;
-  color: #fa5652;
-  color: rgba(250, 86, 82, var(--placeholder-opacity));
+  color: crimson;
+  color: rgba(220, 20, 60, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-secondary:focus::-ms-input-placeholder {
   --placeholder-opacity: 1;
-  color: #fa5652;
-  color: rgba(250, 86, 82, var(--placeholder-opacity));
+  color: crimson;
+  color: rgba(220, 20, 60, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-secondary:focus::placeholder {
   --placeholder-opacity: 1;
-  color: #fa5652;
-  color: rgba(250, 86, 82, var(--placeholder-opacity));
+  color: crimson;
+  color: rgba(220, 20, 60, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-neutral:focus::-webkit-input-placeholder {
   --placeholder-opacity: 1;
-  color: #4b4f51;
-  color: rgba(75, 79, 81, var(--placeholder-opacity));
+  color: dimgrey;
+  color: rgba(105, 105, 105, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-neutral:focus:-ms-input-placeholder {
   --placeholder-opacity: 1;
-  color: #4b4f51;
-  color: rgba(75, 79, 81, var(--placeholder-opacity));
+  color: dimgrey;
+  color: rgba(105, 105, 105, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-neutral:focus::-ms-input-placeholder {
   --placeholder-opacity: 1;
-  color: #4b4f51;
-  color: rgba(75, 79, 81, var(--placeholder-opacity));
+  color: dimgrey;
+  color: rgba(105, 105, 105, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-neutral:focus::placeholder {
   --placeholder-opacity: 1;
-  color: #4b4f51;
-  color: rgba(75, 79, 81, var(--placeholder-opacity));
+  color: dimgrey;
+  color: rgba(105, 105, 105, var(--placeholder-opacity));
 }
 
 .placeholder-opacity-0::-webkit-input-placeholder {
@@ -14107,20 +14107,20 @@ html {
 
 .text-primary {
   --text-opacity: 1;
-  color: #035755;
-  color: rgba(3, 87, 85, var(--text-opacity));
+  color: cadetblue;
+  color: rgba(95, 158, 160, var(--text-opacity));
 }
 
 .text-secondary {
   --text-opacity: 1;
-  color: #fa5652;
-  color: rgba(250, 86, 82, var(--text-opacity));
+  color: crimson;
+  color: rgba(220, 20, 60, var(--text-opacity));
 }
 
 .text-neutral {
   --text-opacity: 1;
-  color: #4b4f51;
-  color: rgba(75, 79, 81, var(--text-opacity));
+  color: dimgrey;
+  color: rgba(105, 105, 105, var(--text-opacity));
 }
 
 .hover\:text-transparent:hover {
@@ -14685,20 +14685,20 @@ html {
 
 .hover\:text-primary:hover {
   --text-opacity: 1;
-  color: #035755;
-  color: rgba(3, 87, 85, var(--text-opacity));
+  color: cadetblue;
+  color: rgba(95, 158, 160, var(--text-opacity));
 }
 
 .hover\:text-secondary:hover {
   --text-opacity: 1;
-  color: #fa5652;
-  color: rgba(250, 86, 82, var(--text-opacity));
+  color: crimson;
+  color: rgba(220, 20, 60, var(--text-opacity));
 }
 
 .hover\:text-neutral:hover {
   --text-opacity: 1;
-  color: #4b4f51;
-  color: rgba(75, 79, 81, var(--text-opacity));
+  color: dimgrey;
+  color: rgba(105, 105, 105, var(--text-opacity));
 }
 
 .focus\:text-transparent:focus {
@@ -15263,20 +15263,20 @@ html {
 
 .focus\:text-primary:focus {
   --text-opacity: 1;
-  color: #035755;
-  color: rgba(3, 87, 85, var(--text-opacity));
+  color: cadetblue;
+  color: rgba(95, 158, 160, var(--text-opacity));
 }
 
 .focus\:text-secondary:focus {
   --text-opacity: 1;
-  color: #fa5652;
-  color: rgba(250, 86, 82, var(--text-opacity));
+  color: crimson;
+  color: rgba(220, 20, 60, var(--text-opacity));
 }
 
 .focus\:text-neutral:focus {
   --text-opacity: 1;
-  color: #4b4f51;
-  color: rgba(75, 79, 81, var(--text-opacity));
+  color: dimgrey;
+  color: rgba(105, 105, 105, var(--text-opacity));
 }
 
 .text-opacity-0 {
@@ -19278,20 +19278,20 @@ html {
 
   .sm\:divide-primary > :not(template) ~ :not(template) {
     --divide-opacity: 1;
-    border-color: #035755;
-    border-color: rgba(3, 87, 85, var(--divide-opacity));
+    border-color: cadetblue;
+    border-color: rgba(95, 158, 160, var(--divide-opacity));
   }
 
   .sm\:divide-secondary > :not(template) ~ :not(template) {
     --divide-opacity: 1;
-    border-color: #fa5652;
-    border-color: rgba(250, 86, 82, var(--divide-opacity));
+    border-color: crimson;
+    border-color: rgba(220, 20, 60, var(--divide-opacity));
   }
 
   .sm\:divide-neutral > :not(template) ~ :not(template) {
     --divide-opacity: 1;
-    border-color: #4b4f51;
-    border-color: rgba(75, 79, 81, var(--divide-opacity));
+    border-color: dimgrey;
+    border-color: rgba(105, 105, 105, var(--divide-opacity));
   }
 
   .sm\:divide-opacity-0 > :not(template) ~ :not(template) {
@@ -19940,20 +19940,20 @@ html {
 
   .sm\:bg-primary {
     --bg-opacity: 1;
-    background-color: #035755;
-    background-color: rgba(3, 87, 85, var(--bg-opacity));
+    background-color: cadetblue;
+    background-color: rgba(95, 158, 160, var(--bg-opacity));
   }
 
   .sm\:bg-secondary {
     --bg-opacity: 1;
-    background-color: #fa5652;
-    background-color: rgba(250, 86, 82, var(--bg-opacity));
+    background-color: crimson;
+    background-color: rgba(220, 20, 60, var(--bg-opacity));
   }
 
   .sm\:bg-neutral {
     --bg-opacity: 1;
-    background-color: #4b4f51;
-    background-color: rgba(75, 79, 81, var(--bg-opacity));
+    background-color: dimgrey;
+    background-color: rgba(105, 105, 105, var(--bg-opacity));
   }
 
   .sm\:hover\:bg-transparent:hover {
@@ -20518,20 +20518,20 @@ html {
 
   .sm\:hover\:bg-primary:hover {
     --bg-opacity: 1;
-    background-color: #035755;
-    background-color: rgba(3, 87, 85, var(--bg-opacity));
+    background-color: cadetblue;
+    background-color: rgba(95, 158, 160, var(--bg-opacity));
   }
 
   .sm\:hover\:bg-secondary:hover {
     --bg-opacity: 1;
-    background-color: #fa5652;
-    background-color: rgba(250, 86, 82, var(--bg-opacity));
+    background-color: crimson;
+    background-color: rgba(220, 20, 60, var(--bg-opacity));
   }
 
   .sm\:hover\:bg-neutral:hover {
     --bg-opacity: 1;
-    background-color: #4b4f51;
-    background-color: rgba(75, 79, 81, var(--bg-opacity));
+    background-color: dimgrey;
+    background-color: rgba(105, 105, 105, var(--bg-opacity));
   }
 
   .sm\:focus\:bg-transparent:focus {
@@ -21096,20 +21096,20 @@ html {
 
   .sm\:focus\:bg-primary:focus {
     --bg-opacity: 1;
-    background-color: #035755;
-    background-color: rgba(3, 87, 85, var(--bg-opacity));
+    background-color: cadetblue;
+    background-color: rgba(95, 158, 160, var(--bg-opacity));
   }
 
   .sm\:focus\:bg-secondary:focus {
     --bg-opacity: 1;
-    background-color: #fa5652;
-    background-color: rgba(250, 86, 82, var(--bg-opacity));
+    background-color: crimson;
+    background-color: rgba(220, 20, 60, var(--bg-opacity));
   }
 
   .sm\:focus\:bg-neutral:focus {
     --bg-opacity: 1;
-    background-color: #4b4f51;
-    background-color: rgba(75, 79, 81, var(--bg-opacity));
+    background-color: dimgrey;
+    background-color: rgba(105, 105, 105, var(--bg-opacity));
   }
 
   .sm\:bg-opacity-0 {
@@ -21814,20 +21814,20 @@ html {
 
   .sm\:border-primary {
     --border-opacity: 1;
-    border-color: #035755;
-    border-color: rgba(3, 87, 85, var(--border-opacity));
+    border-color: cadetblue;
+    border-color: rgba(95, 158, 160, var(--border-opacity));
   }
 
   .sm\:border-secondary {
     --border-opacity: 1;
-    border-color: #fa5652;
-    border-color: rgba(250, 86, 82, var(--border-opacity));
+    border-color: crimson;
+    border-color: rgba(220, 20, 60, var(--border-opacity));
   }
 
   .sm\:border-neutral {
     --border-opacity: 1;
-    border-color: #4b4f51;
-    border-color: rgba(75, 79, 81, var(--border-opacity));
+    border-color: dimgrey;
+    border-color: rgba(105, 105, 105, var(--border-opacity));
   }
 
   .sm\:hover\:border-transparent:hover {
@@ -22392,20 +22392,20 @@ html {
 
   .sm\:hover\:border-primary:hover {
     --border-opacity: 1;
-    border-color: #035755;
-    border-color: rgba(3, 87, 85, var(--border-opacity));
+    border-color: cadetblue;
+    border-color: rgba(95, 158, 160, var(--border-opacity));
   }
 
   .sm\:hover\:border-secondary:hover {
     --border-opacity: 1;
-    border-color: #fa5652;
-    border-color: rgba(250, 86, 82, var(--border-opacity));
+    border-color: crimson;
+    border-color: rgba(220, 20, 60, var(--border-opacity));
   }
 
   .sm\:hover\:border-neutral:hover {
     --border-opacity: 1;
-    border-color: #4b4f51;
-    border-color: rgba(75, 79, 81, var(--border-opacity));
+    border-color: dimgrey;
+    border-color: rgba(105, 105, 105, var(--border-opacity));
   }
 
   .sm\:focus\:border-transparent:focus {
@@ -22970,20 +22970,20 @@ html {
 
   .sm\:focus\:border-primary:focus {
     --border-opacity: 1;
-    border-color: #035755;
-    border-color: rgba(3, 87, 85, var(--border-opacity));
+    border-color: cadetblue;
+    border-color: rgba(95, 158, 160, var(--border-opacity));
   }
 
   .sm\:focus\:border-secondary:focus {
     --border-opacity: 1;
-    border-color: #fa5652;
-    border-color: rgba(250, 86, 82, var(--border-opacity));
+    border-color: crimson;
+    border-color: rgba(220, 20, 60, var(--border-opacity));
   }
 
   .sm\:focus\:border-neutral:focus {
     --border-opacity: 1;
-    border-color: #4b4f51;
-    border-color: rgba(75, 79, 81, var(--border-opacity));
+    border-color: dimgrey;
+    border-color: rgba(105, 105, 105, var(--border-opacity));
   }
 
   .sm\:border-opacity-0 {
@@ -28296,74 +28296,74 @@ html {
 
   .sm\:placeholder-primary::-webkit-input-placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-primary:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-primary::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-primary::placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-secondary::-webkit-input-placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-secondary:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-secondary::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-secondary::placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-neutral::-webkit-input-placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-neutral:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-neutral::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-neutral::placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
@@ -30608,74 +30608,74 @@ html {
 
   .sm\:focus\:placeholder-primary:focus::-webkit-input-placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-primary:focus:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-primary:focus::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-primary:focus::placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-secondary:focus::-webkit-input-placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-secondary:focus:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-secondary:focus::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-secondary:focus::placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-neutral:focus::-webkit-input-placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-neutral:focus:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-neutral:focus::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-neutral:focus::placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-opacity-0::-webkit-input-placeholder {
@@ -31675,20 +31675,20 @@ html {
 
   .sm\:text-primary {
     --text-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--text-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--text-opacity));
   }
 
   .sm\:text-secondary {
     --text-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--text-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--text-opacity));
   }
 
   .sm\:text-neutral {
     --text-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--text-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--text-opacity));
   }
 
   .sm\:hover\:text-transparent:hover {
@@ -32253,20 +32253,20 @@ html {
 
   .sm\:hover\:text-primary:hover {
     --text-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--text-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--text-opacity));
   }
 
   .sm\:hover\:text-secondary:hover {
     --text-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--text-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--text-opacity));
   }
 
   .sm\:hover\:text-neutral:hover {
     --text-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--text-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--text-opacity));
   }
 
   .sm\:focus\:text-transparent:focus {
@@ -32831,20 +32831,20 @@ html {
 
   .sm\:focus\:text-primary:focus {
     --text-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--text-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--text-opacity));
   }
 
   .sm\:focus\:text-secondary:focus {
     --text-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--text-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--text-opacity));
   }
 
   .sm\:focus\:text-neutral:focus {
     --text-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--text-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--text-opacity));
   }
 
   .sm\:text-opacity-0 {
@@ -36845,20 +36845,20 @@ html {
 
   .md\:divide-primary > :not(template) ~ :not(template) {
     --divide-opacity: 1;
-    border-color: #035755;
-    border-color: rgba(3, 87, 85, var(--divide-opacity));
+    border-color: cadetblue;
+    border-color: rgba(95, 158, 160, var(--divide-opacity));
   }
 
   .md\:divide-secondary > :not(template) ~ :not(template) {
     --divide-opacity: 1;
-    border-color: #fa5652;
-    border-color: rgba(250, 86, 82, var(--divide-opacity));
+    border-color: crimson;
+    border-color: rgba(220, 20, 60, var(--divide-opacity));
   }
 
   .md\:divide-neutral > :not(template) ~ :not(template) {
     --divide-opacity: 1;
-    border-color: #4b4f51;
-    border-color: rgba(75, 79, 81, var(--divide-opacity));
+    border-color: dimgrey;
+    border-color: rgba(105, 105, 105, var(--divide-opacity));
   }
 
   .md\:divide-opacity-0 > :not(template) ~ :not(template) {
@@ -37507,20 +37507,20 @@ html {
 
   .md\:bg-primary {
     --bg-opacity: 1;
-    background-color: #035755;
-    background-color: rgba(3, 87, 85, var(--bg-opacity));
+    background-color: cadetblue;
+    background-color: rgba(95, 158, 160, var(--bg-opacity));
   }
 
   .md\:bg-secondary {
     --bg-opacity: 1;
-    background-color: #fa5652;
-    background-color: rgba(250, 86, 82, var(--bg-opacity));
+    background-color: crimson;
+    background-color: rgba(220, 20, 60, var(--bg-opacity));
   }
 
   .md\:bg-neutral {
     --bg-opacity: 1;
-    background-color: #4b4f51;
-    background-color: rgba(75, 79, 81, var(--bg-opacity));
+    background-color: dimgrey;
+    background-color: rgba(105, 105, 105, var(--bg-opacity));
   }
 
   .md\:hover\:bg-transparent:hover {
@@ -38085,20 +38085,20 @@ html {
 
   .md\:hover\:bg-primary:hover {
     --bg-opacity: 1;
-    background-color: #035755;
-    background-color: rgba(3, 87, 85, var(--bg-opacity));
+    background-color: cadetblue;
+    background-color: rgba(95, 158, 160, var(--bg-opacity));
   }
 
   .md\:hover\:bg-secondary:hover {
     --bg-opacity: 1;
-    background-color: #fa5652;
-    background-color: rgba(250, 86, 82, var(--bg-opacity));
+    background-color: crimson;
+    background-color: rgba(220, 20, 60, var(--bg-opacity));
   }
 
   .md\:hover\:bg-neutral:hover {
     --bg-opacity: 1;
-    background-color: #4b4f51;
-    background-color: rgba(75, 79, 81, var(--bg-opacity));
+    background-color: dimgrey;
+    background-color: rgba(105, 105, 105, var(--bg-opacity));
   }
 
   .md\:focus\:bg-transparent:focus {
@@ -38663,20 +38663,20 @@ html {
 
   .md\:focus\:bg-primary:focus {
     --bg-opacity: 1;
-    background-color: #035755;
-    background-color: rgba(3, 87, 85, var(--bg-opacity));
+    background-color: cadetblue;
+    background-color: rgba(95, 158, 160, var(--bg-opacity));
   }
 
   .md\:focus\:bg-secondary:focus {
     --bg-opacity: 1;
-    background-color: #fa5652;
-    background-color: rgba(250, 86, 82, var(--bg-opacity));
+    background-color: crimson;
+    background-color: rgba(220, 20, 60, var(--bg-opacity));
   }
 
   .md\:focus\:bg-neutral:focus {
     --bg-opacity: 1;
-    background-color: #4b4f51;
-    background-color: rgba(75, 79, 81, var(--bg-opacity));
+    background-color: dimgrey;
+    background-color: rgba(105, 105, 105, var(--bg-opacity));
   }
 
   .md\:bg-opacity-0 {
@@ -39381,20 +39381,20 @@ html {
 
   .md\:border-primary {
     --border-opacity: 1;
-    border-color: #035755;
-    border-color: rgba(3, 87, 85, var(--border-opacity));
+    border-color: cadetblue;
+    border-color: rgba(95, 158, 160, var(--border-opacity));
   }
 
   .md\:border-secondary {
     --border-opacity: 1;
-    border-color: #fa5652;
-    border-color: rgba(250, 86, 82, var(--border-opacity));
+    border-color: crimson;
+    border-color: rgba(220, 20, 60, var(--border-opacity));
   }
 
   .md\:border-neutral {
     --border-opacity: 1;
-    border-color: #4b4f51;
-    border-color: rgba(75, 79, 81, var(--border-opacity));
+    border-color: dimgrey;
+    border-color: rgba(105, 105, 105, var(--border-opacity));
   }
 
   .md\:hover\:border-transparent:hover {
@@ -39959,20 +39959,20 @@ html {
 
   .md\:hover\:border-primary:hover {
     --border-opacity: 1;
-    border-color: #035755;
-    border-color: rgba(3, 87, 85, var(--border-opacity));
+    border-color: cadetblue;
+    border-color: rgba(95, 158, 160, var(--border-opacity));
   }
 
   .md\:hover\:border-secondary:hover {
     --border-opacity: 1;
-    border-color: #fa5652;
-    border-color: rgba(250, 86, 82, var(--border-opacity));
+    border-color: crimson;
+    border-color: rgba(220, 20, 60, var(--border-opacity));
   }
 
   .md\:hover\:border-neutral:hover {
     --border-opacity: 1;
-    border-color: #4b4f51;
-    border-color: rgba(75, 79, 81, var(--border-opacity));
+    border-color: dimgrey;
+    border-color: rgba(105, 105, 105, var(--border-opacity));
   }
 
   .md\:focus\:border-transparent:focus {
@@ -40537,20 +40537,20 @@ html {
 
   .md\:focus\:border-primary:focus {
     --border-opacity: 1;
-    border-color: #035755;
-    border-color: rgba(3, 87, 85, var(--border-opacity));
+    border-color: cadetblue;
+    border-color: rgba(95, 158, 160, var(--border-opacity));
   }
 
   .md\:focus\:border-secondary:focus {
     --border-opacity: 1;
-    border-color: #fa5652;
-    border-color: rgba(250, 86, 82, var(--border-opacity));
+    border-color: crimson;
+    border-color: rgba(220, 20, 60, var(--border-opacity));
   }
 
   .md\:focus\:border-neutral:focus {
     --border-opacity: 1;
-    border-color: #4b4f51;
-    border-color: rgba(75, 79, 81, var(--border-opacity));
+    border-color: dimgrey;
+    border-color: rgba(105, 105, 105, var(--border-opacity));
   }
 
   .md\:border-opacity-0 {
@@ -45863,74 +45863,74 @@ html {
 
   .md\:placeholder-primary::-webkit-input-placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .md\:placeholder-primary:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .md\:placeholder-primary::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .md\:placeholder-primary::placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .md\:placeholder-secondary::-webkit-input-placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .md\:placeholder-secondary:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .md\:placeholder-secondary::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .md\:placeholder-secondary::placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .md\:placeholder-neutral::-webkit-input-placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .md\:placeholder-neutral:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .md\:placeholder-neutral::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .md\:placeholder-neutral::placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
@@ -48175,74 +48175,74 @@ html {
 
   .md\:focus\:placeholder-primary:focus::-webkit-input-placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-primary:focus:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-primary:focus::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-primary:focus::placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-secondary:focus::-webkit-input-placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-secondary:focus:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-secondary:focus::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-secondary:focus::placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-neutral:focus::-webkit-input-placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-neutral:focus:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-neutral:focus::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-neutral:focus::placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .md\:placeholder-opacity-0::-webkit-input-placeholder {
@@ -49242,20 +49242,20 @@ html {
 
   .md\:text-primary {
     --text-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--text-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--text-opacity));
   }
 
   .md\:text-secondary {
     --text-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--text-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--text-opacity));
   }
 
   .md\:text-neutral {
     --text-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--text-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--text-opacity));
   }
 
   .md\:hover\:text-transparent:hover {
@@ -49820,20 +49820,20 @@ html {
 
   .md\:hover\:text-primary:hover {
     --text-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--text-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--text-opacity));
   }
 
   .md\:hover\:text-secondary:hover {
     --text-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--text-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--text-opacity));
   }
 
   .md\:hover\:text-neutral:hover {
     --text-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--text-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--text-opacity));
   }
 
   .md\:focus\:text-transparent:focus {
@@ -50398,20 +50398,20 @@ html {
 
   .md\:focus\:text-primary:focus {
     --text-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--text-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--text-opacity));
   }
 
   .md\:focus\:text-secondary:focus {
     --text-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--text-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--text-opacity));
   }
 
   .md\:focus\:text-neutral:focus {
     --text-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--text-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--text-opacity));
   }
 
   .md\:text-opacity-0 {
@@ -54412,20 +54412,20 @@ html {
 
   .lg\:divide-primary > :not(template) ~ :not(template) {
     --divide-opacity: 1;
-    border-color: #035755;
-    border-color: rgba(3, 87, 85, var(--divide-opacity));
+    border-color: cadetblue;
+    border-color: rgba(95, 158, 160, var(--divide-opacity));
   }
 
   .lg\:divide-secondary > :not(template) ~ :not(template) {
     --divide-opacity: 1;
-    border-color: #fa5652;
-    border-color: rgba(250, 86, 82, var(--divide-opacity));
+    border-color: crimson;
+    border-color: rgba(220, 20, 60, var(--divide-opacity));
   }
 
   .lg\:divide-neutral > :not(template) ~ :not(template) {
     --divide-opacity: 1;
-    border-color: #4b4f51;
-    border-color: rgba(75, 79, 81, var(--divide-opacity));
+    border-color: dimgrey;
+    border-color: rgba(105, 105, 105, var(--divide-opacity));
   }
 
   .lg\:divide-opacity-0 > :not(template) ~ :not(template) {
@@ -55074,20 +55074,20 @@ html {
 
   .lg\:bg-primary {
     --bg-opacity: 1;
-    background-color: #035755;
-    background-color: rgba(3, 87, 85, var(--bg-opacity));
+    background-color: cadetblue;
+    background-color: rgba(95, 158, 160, var(--bg-opacity));
   }
 
   .lg\:bg-secondary {
     --bg-opacity: 1;
-    background-color: #fa5652;
-    background-color: rgba(250, 86, 82, var(--bg-opacity));
+    background-color: crimson;
+    background-color: rgba(220, 20, 60, var(--bg-opacity));
   }
 
   .lg\:bg-neutral {
     --bg-opacity: 1;
-    background-color: #4b4f51;
-    background-color: rgba(75, 79, 81, var(--bg-opacity));
+    background-color: dimgrey;
+    background-color: rgba(105, 105, 105, var(--bg-opacity));
   }
 
   .lg\:hover\:bg-transparent:hover {
@@ -55652,20 +55652,20 @@ html {
 
   .lg\:hover\:bg-primary:hover {
     --bg-opacity: 1;
-    background-color: #035755;
-    background-color: rgba(3, 87, 85, var(--bg-opacity));
+    background-color: cadetblue;
+    background-color: rgba(95, 158, 160, var(--bg-opacity));
   }
 
   .lg\:hover\:bg-secondary:hover {
     --bg-opacity: 1;
-    background-color: #fa5652;
-    background-color: rgba(250, 86, 82, var(--bg-opacity));
+    background-color: crimson;
+    background-color: rgba(220, 20, 60, var(--bg-opacity));
   }
 
   .lg\:hover\:bg-neutral:hover {
     --bg-opacity: 1;
-    background-color: #4b4f51;
-    background-color: rgba(75, 79, 81, var(--bg-opacity));
+    background-color: dimgrey;
+    background-color: rgba(105, 105, 105, var(--bg-opacity));
   }
 
   .lg\:focus\:bg-transparent:focus {
@@ -56230,20 +56230,20 @@ html {
 
   .lg\:focus\:bg-primary:focus {
     --bg-opacity: 1;
-    background-color: #035755;
-    background-color: rgba(3, 87, 85, var(--bg-opacity));
+    background-color: cadetblue;
+    background-color: rgba(95, 158, 160, var(--bg-opacity));
   }
 
   .lg\:focus\:bg-secondary:focus {
     --bg-opacity: 1;
-    background-color: #fa5652;
-    background-color: rgba(250, 86, 82, var(--bg-opacity));
+    background-color: crimson;
+    background-color: rgba(220, 20, 60, var(--bg-opacity));
   }
 
   .lg\:focus\:bg-neutral:focus {
     --bg-opacity: 1;
-    background-color: #4b4f51;
-    background-color: rgba(75, 79, 81, var(--bg-opacity));
+    background-color: dimgrey;
+    background-color: rgba(105, 105, 105, var(--bg-opacity));
   }
 
   .lg\:bg-opacity-0 {
@@ -56948,20 +56948,20 @@ html {
 
   .lg\:border-primary {
     --border-opacity: 1;
-    border-color: #035755;
-    border-color: rgba(3, 87, 85, var(--border-opacity));
+    border-color: cadetblue;
+    border-color: rgba(95, 158, 160, var(--border-opacity));
   }
 
   .lg\:border-secondary {
     --border-opacity: 1;
-    border-color: #fa5652;
-    border-color: rgba(250, 86, 82, var(--border-opacity));
+    border-color: crimson;
+    border-color: rgba(220, 20, 60, var(--border-opacity));
   }
 
   .lg\:border-neutral {
     --border-opacity: 1;
-    border-color: #4b4f51;
-    border-color: rgba(75, 79, 81, var(--border-opacity));
+    border-color: dimgrey;
+    border-color: rgba(105, 105, 105, var(--border-opacity));
   }
 
   .lg\:hover\:border-transparent:hover {
@@ -57526,20 +57526,20 @@ html {
 
   .lg\:hover\:border-primary:hover {
     --border-opacity: 1;
-    border-color: #035755;
-    border-color: rgba(3, 87, 85, var(--border-opacity));
+    border-color: cadetblue;
+    border-color: rgba(95, 158, 160, var(--border-opacity));
   }
 
   .lg\:hover\:border-secondary:hover {
     --border-opacity: 1;
-    border-color: #fa5652;
-    border-color: rgba(250, 86, 82, var(--border-opacity));
+    border-color: crimson;
+    border-color: rgba(220, 20, 60, var(--border-opacity));
   }
 
   .lg\:hover\:border-neutral:hover {
     --border-opacity: 1;
-    border-color: #4b4f51;
-    border-color: rgba(75, 79, 81, var(--border-opacity));
+    border-color: dimgrey;
+    border-color: rgba(105, 105, 105, var(--border-opacity));
   }
 
   .lg\:focus\:border-transparent:focus {
@@ -58104,20 +58104,20 @@ html {
 
   .lg\:focus\:border-primary:focus {
     --border-opacity: 1;
-    border-color: #035755;
-    border-color: rgba(3, 87, 85, var(--border-opacity));
+    border-color: cadetblue;
+    border-color: rgba(95, 158, 160, var(--border-opacity));
   }
 
   .lg\:focus\:border-secondary:focus {
     --border-opacity: 1;
-    border-color: #fa5652;
-    border-color: rgba(250, 86, 82, var(--border-opacity));
+    border-color: crimson;
+    border-color: rgba(220, 20, 60, var(--border-opacity));
   }
 
   .lg\:focus\:border-neutral:focus {
     --border-opacity: 1;
-    border-color: #4b4f51;
-    border-color: rgba(75, 79, 81, var(--border-opacity));
+    border-color: dimgrey;
+    border-color: rgba(105, 105, 105, var(--border-opacity));
   }
 
   .lg\:border-opacity-0 {
@@ -63430,74 +63430,74 @@ html {
 
   .lg\:placeholder-primary::-webkit-input-placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-primary:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-primary::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-primary::placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-secondary::-webkit-input-placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-secondary:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-secondary::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-secondary::placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-neutral::-webkit-input-placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-neutral:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-neutral::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-neutral::placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
@@ -65742,74 +65742,74 @@ html {
 
   .lg\:focus\:placeholder-primary:focus::-webkit-input-placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-primary:focus:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-primary:focus::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-primary:focus::placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-secondary:focus::-webkit-input-placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-secondary:focus:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-secondary:focus::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-secondary:focus::placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-neutral:focus::-webkit-input-placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-neutral:focus:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-neutral:focus::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-neutral:focus::placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-opacity-0::-webkit-input-placeholder {
@@ -66809,20 +66809,20 @@ html {
 
   .lg\:text-primary {
     --text-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--text-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--text-opacity));
   }
 
   .lg\:text-secondary {
     --text-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--text-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--text-opacity));
   }
 
   .lg\:text-neutral {
     --text-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--text-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--text-opacity));
   }
 
   .lg\:hover\:text-transparent:hover {
@@ -67387,20 +67387,20 @@ html {
 
   .lg\:hover\:text-primary:hover {
     --text-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--text-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--text-opacity));
   }
 
   .lg\:hover\:text-secondary:hover {
     --text-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--text-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--text-opacity));
   }
 
   .lg\:hover\:text-neutral:hover {
     --text-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--text-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--text-opacity));
   }
 
   .lg\:focus\:text-transparent:focus {
@@ -67965,20 +67965,20 @@ html {
 
   .lg\:focus\:text-primary:focus {
     --text-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--text-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--text-opacity));
   }
 
   .lg\:focus\:text-secondary:focus {
     --text-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--text-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--text-opacity));
   }
 
   .lg\:focus\:text-neutral:focus {
     --text-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--text-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--text-opacity));
   }
 
   .lg\:text-opacity-0 {
@@ -71979,20 +71979,20 @@ html {
 
   .xl\:divide-primary > :not(template) ~ :not(template) {
     --divide-opacity: 1;
-    border-color: #035755;
-    border-color: rgba(3, 87, 85, var(--divide-opacity));
+    border-color: cadetblue;
+    border-color: rgba(95, 158, 160, var(--divide-opacity));
   }
 
   .xl\:divide-secondary > :not(template) ~ :not(template) {
     --divide-opacity: 1;
-    border-color: #fa5652;
-    border-color: rgba(250, 86, 82, var(--divide-opacity));
+    border-color: crimson;
+    border-color: rgba(220, 20, 60, var(--divide-opacity));
   }
 
   .xl\:divide-neutral > :not(template) ~ :not(template) {
     --divide-opacity: 1;
-    border-color: #4b4f51;
-    border-color: rgba(75, 79, 81, var(--divide-opacity));
+    border-color: dimgrey;
+    border-color: rgba(105, 105, 105, var(--divide-opacity));
   }
 
   .xl\:divide-opacity-0 > :not(template) ~ :not(template) {
@@ -72641,20 +72641,20 @@ html {
 
   .xl\:bg-primary {
     --bg-opacity: 1;
-    background-color: #035755;
-    background-color: rgba(3, 87, 85, var(--bg-opacity));
+    background-color: cadetblue;
+    background-color: rgba(95, 158, 160, var(--bg-opacity));
   }
 
   .xl\:bg-secondary {
     --bg-opacity: 1;
-    background-color: #fa5652;
-    background-color: rgba(250, 86, 82, var(--bg-opacity));
+    background-color: crimson;
+    background-color: rgba(220, 20, 60, var(--bg-opacity));
   }
 
   .xl\:bg-neutral {
     --bg-opacity: 1;
-    background-color: #4b4f51;
-    background-color: rgba(75, 79, 81, var(--bg-opacity));
+    background-color: dimgrey;
+    background-color: rgba(105, 105, 105, var(--bg-opacity));
   }
 
   .xl\:hover\:bg-transparent:hover {
@@ -73219,20 +73219,20 @@ html {
 
   .xl\:hover\:bg-primary:hover {
     --bg-opacity: 1;
-    background-color: #035755;
-    background-color: rgba(3, 87, 85, var(--bg-opacity));
+    background-color: cadetblue;
+    background-color: rgba(95, 158, 160, var(--bg-opacity));
   }
 
   .xl\:hover\:bg-secondary:hover {
     --bg-opacity: 1;
-    background-color: #fa5652;
-    background-color: rgba(250, 86, 82, var(--bg-opacity));
+    background-color: crimson;
+    background-color: rgba(220, 20, 60, var(--bg-opacity));
   }
 
   .xl\:hover\:bg-neutral:hover {
     --bg-opacity: 1;
-    background-color: #4b4f51;
-    background-color: rgba(75, 79, 81, var(--bg-opacity));
+    background-color: dimgrey;
+    background-color: rgba(105, 105, 105, var(--bg-opacity));
   }
 
   .xl\:focus\:bg-transparent:focus {
@@ -73797,20 +73797,20 @@ html {
 
   .xl\:focus\:bg-primary:focus {
     --bg-opacity: 1;
-    background-color: #035755;
-    background-color: rgba(3, 87, 85, var(--bg-opacity));
+    background-color: cadetblue;
+    background-color: rgba(95, 158, 160, var(--bg-opacity));
   }
 
   .xl\:focus\:bg-secondary:focus {
     --bg-opacity: 1;
-    background-color: #fa5652;
-    background-color: rgba(250, 86, 82, var(--bg-opacity));
+    background-color: crimson;
+    background-color: rgba(220, 20, 60, var(--bg-opacity));
   }
 
   .xl\:focus\:bg-neutral:focus {
     --bg-opacity: 1;
-    background-color: #4b4f51;
-    background-color: rgba(75, 79, 81, var(--bg-opacity));
+    background-color: dimgrey;
+    background-color: rgba(105, 105, 105, var(--bg-opacity));
   }
 
   .xl\:bg-opacity-0 {
@@ -74515,20 +74515,20 @@ html {
 
   .xl\:border-primary {
     --border-opacity: 1;
-    border-color: #035755;
-    border-color: rgba(3, 87, 85, var(--border-opacity));
+    border-color: cadetblue;
+    border-color: rgba(95, 158, 160, var(--border-opacity));
   }
 
   .xl\:border-secondary {
     --border-opacity: 1;
-    border-color: #fa5652;
-    border-color: rgba(250, 86, 82, var(--border-opacity));
+    border-color: crimson;
+    border-color: rgba(220, 20, 60, var(--border-opacity));
   }
 
   .xl\:border-neutral {
     --border-opacity: 1;
-    border-color: #4b4f51;
-    border-color: rgba(75, 79, 81, var(--border-opacity));
+    border-color: dimgrey;
+    border-color: rgba(105, 105, 105, var(--border-opacity));
   }
 
   .xl\:hover\:border-transparent:hover {
@@ -75093,20 +75093,20 @@ html {
 
   .xl\:hover\:border-primary:hover {
     --border-opacity: 1;
-    border-color: #035755;
-    border-color: rgba(3, 87, 85, var(--border-opacity));
+    border-color: cadetblue;
+    border-color: rgba(95, 158, 160, var(--border-opacity));
   }
 
   .xl\:hover\:border-secondary:hover {
     --border-opacity: 1;
-    border-color: #fa5652;
-    border-color: rgba(250, 86, 82, var(--border-opacity));
+    border-color: crimson;
+    border-color: rgba(220, 20, 60, var(--border-opacity));
   }
 
   .xl\:hover\:border-neutral:hover {
     --border-opacity: 1;
-    border-color: #4b4f51;
-    border-color: rgba(75, 79, 81, var(--border-opacity));
+    border-color: dimgrey;
+    border-color: rgba(105, 105, 105, var(--border-opacity));
   }
 
   .xl\:focus\:border-transparent:focus {
@@ -75671,20 +75671,20 @@ html {
 
   .xl\:focus\:border-primary:focus {
     --border-opacity: 1;
-    border-color: #035755;
-    border-color: rgba(3, 87, 85, var(--border-opacity));
+    border-color: cadetblue;
+    border-color: rgba(95, 158, 160, var(--border-opacity));
   }
 
   .xl\:focus\:border-secondary:focus {
     --border-opacity: 1;
-    border-color: #fa5652;
-    border-color: rgba(250, 86, 82, var(--border-opacity));
+    border-color: crimson;
+    border-color: rgba(220, 20, 60, var(--border-opacity));
   }
 
   .xl\:focus\:border-neutral:focus {
     --border-opacity: 1;
-    border-color: #4b4f51;
-    border-color: rgba(75, 79, 81, var(--border-opacity));
+    border-color: dimgrey;
+    border-color: rgba(105, 105, 105, var(--border-opacity));
   }
 
   .xl\:border-opacity-0 {
@@ -80997,74 +80997,74 @@ html {
 
   .xl\:placeholder-primary::-webkit-input-placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-primary:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-primary::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-primary::placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-secondary::-webkit-input-placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-secondary:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-secondary::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-secondary::placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-neutral::-webkit-input-placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-neutral:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-neutral::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-neutral::placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
@@ -83309,74 +83309,74 @@ html {
 
   .xl\:focus\:placeholder-primary:focus::-webkit-input-placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-primary:focus:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-primary:focus::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-primary:focus::placeholder {
     --placeholder-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--placeholder-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-secondary:focus::-webkit-input-placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-secondary:focus:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-secondary:focus::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-secondary:focus::placeholder {
     --placeholder-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--placeholder-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-neutral:focus::-webkit-input-placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-neutral:focus:-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-neutral:focus::-ms-input-placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-neutral:focus::placeholder {
     --placeholder-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--placeholder-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-opacity-0::-webkit-input-placeholder {
@@ -84376,20 +84376,20 @@ html {
 
   .xl\:text-primary {
     --text-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--text-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--text-opacity));
   }
 
   .xl\:text-secondary {
     --text-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--text-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--text-opacity));
   }
 
   .xl\:text-neutral {
     --text-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--text-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--text-opacity));
   }
 
   .xl\:hover\:text-transparent:hover {
@@ -84954,20 +84954,20 @@ html {
 
   .xl\:hover\:text-primary:hover {
     --text-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--text-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--text-opacity));
   }
 
   .xl\:hover\:text-secondary:hover {
     --text-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--text-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--text-opacity));
   }
 
   .xl\:hover\:text-neutral:hover {
     --text-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--text-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--text-opacity));
   }
 
   .xl\:focus\:text-transparent:focus {
@@ -85532,20 +85532,20 @@ html {
 
   .xl\:focus\:text-primary:focus {
     --text-opacity: 1;
-    color: #035755;
-    color: rgba(3, 87, 85, var(--text-opacity));
+    color: cadetblue;
+    color: rgba(95, 158, 160, var(--text-opacity));
   }
 
   .xl\:focus\:text-secondary:focus {
     --text-opacity: 1;
-    color: #fa5652;
-    color: rgba(250, 86, 82, var(--text-opacity));
+    color: crimson;
+    color: rgba(220, 20, 60, var(--text-opacity));
   }
 
   .xl\:focus\:text-neutral:focus {
     --text-opacity: 1;
-    color: #4b4f51;
-    color: rgba(75, 79, 81, var(--text-opacity));
+    color: dimgrey;
+    color: rgba(105, 105, 105, var(--text-opacity));
   }
 
   .xl\:text-opacity-0 {

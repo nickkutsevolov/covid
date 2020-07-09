@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 function Search( {getResult}) {
     const [country, setCountry] = useState('');
-    const [neigh, switchNeigh] = useState(true);
     const [suggest, setSuggest] = useState([]);
     const [search, setSearch] = useState('');
 
@@ -26,7 +25,7 @@ function Search( {getResult}) {
                                      el : false))
         .then(data => {
             (data[0]) ? 
-            getResult(data[0].alpha2Code,neigh):
+            getResult(data[0].alpha2Code):
             setSearch('');
         })
     }
@@ -52,10 +51,6 @@ function Search( {getResult}) {
                         <div>{suggest[0] ? 'Best match: '+suggest[0].name : 'nothing found'}</div>
                     </div>
                 </div>
-                <label>
-                    Show neighbours:
-                        <input type="checkbox" onChange={e => switchNeigh(e.target.checked)} checked={neigh} />
-                </label>
                 <button type="submit" className="bg-blue-400 text-white p-1 rounded">Search</button>
             </form>
         </div>

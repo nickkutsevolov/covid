@@ -6,8 +6,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        'primary': 'crimson',
-        'secondary': 'cadetblue',
+        'primary': 'cadetblue',
+        'secondary': 'crimson',
         'neutral': 'dimgrey'
       }
     }
