@@ -6,7 +6,7 @@ function Table() {
     const api = useSummary();
     const [data, setData] = useState([]);
     const [sort, setSort] = useState('');
-    const [direction, setDirection] = useState('↓');
+    const [reverseSort, setReverseSort] = useState(false);
 
     useEffect(() => {
         setData(api.sort((a, b) => a.Country.localeCompare(b.Country)))        
@@ -22,18 +22,18 @@ function Table() {
     setSort('');
     }
 
-    if(direction === '↑') {
+    if(reverseSort) {
         setData(data.reverse());
-        setDirection('');
+        setReverseSort(false);
     }
 
     function sortHandler (e) {
         if(e.target.innerHTML.includes('↓')) {
-            setDirection('↑');
+            setReverseSort(true);
             e.target.innerHTML = e.target.innerHTML.replace('↓', '↑')
         }
         else if(e.target.innerHTML.includes('↑')) {
-            setDirection('↓');
+            setReverseSort(true);
             e.target.innerHTML = e.target.innerHTML.replace('↑', '↓')
         }
         else {
