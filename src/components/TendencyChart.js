@@ -1,33 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import PeriodSort from './PeriodSort';
+import useDayOne from './useDayOne';
 import { ComposedChart, Line, Bar, XAxis, YAxis, ResponsiveContainer, Tooltip, Legend, ReferenceLine  } from 'recharts';
 
 function TendencyChart () {
-    
+    const api = useDayOne();
     const [data, setData] = useState([]);
-    const [country, setCountry] = useState('belarus');
     const [period, setPeriod] = useState('From day 1');
-
+    
     useEffect(() => {
-        fetch(`https://api.covid19api.com/total/dayone/country/${country}`)
-        .then(data => data.json())
-        .then(data => {
-            data.forEach((el, index) => {
-                el.ActiveCases = el.Confirmed - el.Recovered - el.Deaths;
-                if(index>0) {
-                    el.NewConfirmed = data[index-1].Confirmed - el.Confirmed;
-                    el.NewDeaths = el.Deaths - data[index-1].Deaths;
-                    el.NewRecovered = el.Recovered > data[index-1].Recovered ? el.Recovered - data[index-1].Recovered : 0;
-                    el.Tendency = el.NewConfirmed + el.NewDeaths + el.NewRecovered;
-                }
-                el.Date=el.Date.slice(8,10)+"."+el.Date.slice(5,7);
-            });
-
-            period==='From day 1' ? setData(data):
-            period==='Last month' ? setData(data.slice(-31)):
-            setData(data.slice(-10));
-        })
-    }, [period])
+        period==='From day 1' ? setData(api):
+        period==='Last month' ? setData(api.slice(-31)):
+        setData(api.slice(-10));
+    }, [api, period])
 
     return (
         <div className="container flex flex-col items-center mx-auto p-4">
