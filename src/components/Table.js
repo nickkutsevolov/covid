@@ -22,7 +22,7 @@ function Table() {
     setSort('');
     }
 
-    if(reverseSort) {
+    if (reverseSort) {
         setData(data.reverse());
         setReverseSort(false);
     }
@@ -37,7 +37,7 @@ function Table() {
             e.target.innerHTML = e.target.innerHTML.replace('↑', '↓')
         }
         else {
-            e.target.parentNode.querySelectorAll('div').forEach(el => {if(el.innerHTML.match(/↓|↑/g)) el.innerHTML = el.innerHTML.match(/[A-Za-z]*/)[0]});
+            e.target.parentNode.querySelectorAll('th').forEach(el => {if(el.innerHTML.match(/↓|↑/g)) el.innerHTML = el.innerHTML.match(/[A-Za-z]*/)[0]});
             e.target.innerHTML = e.target.innerHTML+' ↓';
             setSort(e.target.innerHTML.match(/[A-Za-z]*/)[0])
         }
@@ -45,17 +45,21 @@ function Table() {
 
     return (
         <div className="container mx-auto p-4">
-            <div className="table w-full">
-                <div className="table-row text-xl cursor-pointer" onClick={sortHandler}>
-                    <div className="table-cell p-1">Country ↓</div>
-                    <div className="table-cell text-right p-1 bg-gray-200">Confirmed</div>
-                    <div className="table-cell text-right p-1">Deaths</div>
-                    <div className="table-cell text-right p-1 bg-gray-200">Recovered</div>
-                    <div className="table-cell text-right p-1">Lethality</div>
-                    <div className="table-cell text-right p-1 bg-gray-200">InfectionRate</div>
-                </div>
-                {data.length ? data.map((el, index) => <Row data={el} key={el.CountryCode + index} />) : <></>}
-            </div>
+            <table className="table-auto mx-auto">
+                <thead>
+                    <tr className="text-xl cursor-pointer" onClick={sortHandler}>
+                        <th className="px-4 py-2">Country ↓</th>
+                        <th className="text-right px-4 py-2 bg-gray-200">Confirmed</th>
+                        <th className="text-right px-4 py-2">Deaths</th>
+                        <th className="text-right px-4 py-2 bg-gray-200">Recovered</th>
+                        <th className="text-right px-4 py-2">Lethality</th>
+                        <th className="text-right px-4 py-2 bg-gray-200">InfectionRate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {data.length ? data.map((el, index) => <Row data={el} key={el.CountryCode + index} />) : <></>}
+                </tbody>
+            </table>
         </div>
     );
 }

@@ -595,9 +595,13 @@ html {
   overflow-x: hidden;
 }
 
-.table-cell {
+th, td {
   border-width: 1px;
   border-collapse: collapse;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .container {

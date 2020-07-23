@@ -1,9 +1,10 @@
 import {useState, useEffect} from 'react';
 
-function useDayOne () {
+function useDayOne (slug) {
     const [data, setData] = useState([]);
     useEffect(() => {
-        fetch(`https://api.covid19api.com/total/dayone/country/belarus`)
+        if(slug)
+        fetch(`https://api.covid19api.com/total/dayone/country/${slug}`)
         .then(data => data.json())
         .then(data => {
             data.forEach((el, index) => {
@@ -18,7 +19,7 @@ function useDayOne () {
             });
             setData(data);
         })
-    }, [])
+    }, [slug])
 
     return (data)
 }

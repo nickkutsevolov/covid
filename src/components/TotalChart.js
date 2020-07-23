@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import PeriodSort from './PeriodSort';
+import Search from './Search';
 import useDayOne from './useDayOne';
 import { AreaChart, Area, XAxis, YAxis, ResponsiveContainer, Tooltip, Legend  } from 'recharts';
 
 function TotalChart () {
-    const api = useDayOne();
+    const [country, setCountry] = useState(''); 
+    const api = useDayOne(country);
     const [data, setData] = useState([]);
     const [period, setPeriod] = useState('From day 1');
     
@@ -16,6 +18,7 @@ function TotalChart () {
 
     return (
         <div className="container flex flex-col items-center mx-auto p-4">
+            <Search getResult={result => setCountry(result)}/>
             <PeriodSort sortBy={(sortValue) => setPeriod(sortValue)} />
             <ResponsiveContainer width='100%' height={400}>
                 <AreaChart data={data}>

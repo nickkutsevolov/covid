@@ -3,9 +3,11 @@
 html {
     overflow-x: hidden;
 }
-.table-cell {
+th, td {
     @apply border;
     @apply border-collapse;
+    @apply px-4;
+    @apply py-2;
 }
 @tailwind components;
 

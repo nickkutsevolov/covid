@@ -1,57 +1,49 @@
 import React, { useState, useEffect } from 'react';
+import useSummary from './useSummary';
 
 function Search( {getResult}) {
-    const [country, setCountry] = useState('');
+    const api = useSummary();
+    const [data, setData] = useState([]);
     const [suggest, setSuggest] = useState([]);
     const [search, setSearch] = useState('');
 
     useEffect(() => {
-        fetch('https://restcountries.eu/rest/v2/all')
-        .then(data => data.json())
-        .then(data => setSuggest(data.filter(el => el.name.toLowerCase().search(search.toLowerCase())>=0 ||
-                                                el.alpha2Code.toLowerCase().search(search.toLowerCase())>=0 ||
-                                                el.alpha3Code.toLowerCase().search(search.toLowerCase())>=0 ? 
-                                                el : false)))
-    }, [search]);
+        api.shift();
+        setData(api);
+    }, [api])
 
+    useEffect(() => {
+        setSuggest(data.filter(el => el.Country.toLowerCase().match(/[A-Za-z]/g).join('').search(search.toLowerCase())>=0 ? el : false))
+    }, [search, data]);
 
     const onSubmit = (e) => {
         e.preventDefault();
-        fetch('https://restcountries.eu/rest/v2/all')
-        .then(data => data.json())
-        .then(data => data.filter(el => el.name.toLowerCase().search(search.toLowerCase())>=0 ||
-                                     el.alpha2Code.toLowerCase().search(search.toLowerCase())>=0 ||
-                                     el.alpha3Code.toLowerCase().search(search.toLowerCase())>=0 ? 
-                                     el : false))
-        .then(data => {
-            (data[0]) ? 
-            getResult(data[0].alpha2Code):
-            setSearch('');
-        })
+        e.target.nodeName === 'DIV' ? getResult(e.target.innerHTML.toLowerCase()) : getResult(suggest[0].Slug);
+        setSearch('');
+        if (e.target.nodeName==='FORM') e.target.firstChild.blur();
     }
 
     const onSearch = (e) => {
         if (e.target.value.match(/[A-Za-z]/g))
             setSearch(e.target.value.match(/[A-Za-z]/g).join(''));
-        setCountry(e.target.value);
     }
 
-    const toggleSuggestion = (e) => {
-        e.target.nextSibling.className.search('h-auto') > 0 ?
-        e.target.nextSibling.className = e.target.nextSibling.className.replace('auto',"0") : 
-        e.target.nextSibling.className = e.target.nextSibling.className.replace('0',"auto");
+    const showSelect = (e) => { 
+        e.target.nextSibling.classList.toggle('hidden');
+    }
+
+    const hideSelect = (e) => {
+        let select = e.target.nextSibling;
+        setTimeout(() => select.classList.toggle('hidden'),100)
     }
 
     return (
         <div>
-            <form className="text-center flex justify-between" onSubmit={onSubmit}>
-                <div className="relative">
-                    <input type="text" placeholder="search country" value={country} onBlur={toggleSuggestion} onFocus={toggleSuggestion} onChange={onSearch} />
-                    <div className="absolute borders bg-white overflow-hidden w-full h-0">
-                        <div>{suggest[0] ? 'Best match: '+suggest[0].name : 'nothing found'}</div>
-                    </div>
+            <form className='relative' onSubmit={onSubmit} onFocus={showSelect} onBlur={hideSelect}>
+                <input type='text' placeholder='search country' onChange={onSearch} />
+                <div className='absolute border-solid border-2 bg-white overflow-x-hidden h-20 hidden'>
+                    {suggest[0] ? suggest.map(el => <div key={el.CountryCode} className='hover:bg-primary' onClick={onSubmit}>{el.Country}</div>) : 'nothing found'}
                 </div>
-                <button type="submit" className="bg-blue-400 text-white p-1 rounded">Search</button>
             </form>
         </div>
     )
