@@ -18,9 +18,10 @@ function Search( {getResult}) {
 
     const onSubmit = (e) => {
         e.preventDefault();
-        e.target.nodeName === 'DIV' ? getResult(e.target.innerHTML.toLowerCase()) : getResult(suggest[0].Slug);
+        getResult(suggest[0].Slug);
         setSearch('');
-        if (e.target.nodeName==='FORM') e.target.firstChild.blur();
+        e.target.reset();
+        e.target.firstChild.blur();
     }
 
     const onSearch = (e) => {
@@ -28,21 +29,16 @@ function Search( {getResult}) {
             setSearch(e.target.value.match(/[A-Za-z]/g).join(''));
     }
 
-    const showSelect = (e) => { 
+    const toggleSuggest = (e) => { 
         e.target.nextSibling.classList.toggle('hidden');
-    }
-
-    const hideSelect = (e) => {
-        let select = e.target.nextSibling;
-        setTimeout(() => select.classList.toggle('hidden'),100)
     }
 
     return (
         <div>
-            <form className='relative' onSubmit={onSubmit} onFocus={showSelect} onBlur={hideSelect}>
+            <form className='relative' onSubmit={onSubmit} onFocus={toggleSuggest} onBlur={toggleSuggest}>
                 <input type='text' placeholder='search country' onChange={onSearch} />
-                <div className='absolute border-solid border-2 bg-white overflow-x-hidden h-20 hidden'>
-                    {suggest[0] ? suggest.map(el => <div key={el.CountryCode} className='hover:bg-primary' onClick={onSubmit}>{el.Country}</div>) : 'nothing found'}
+                <div className='absolute border-solid border-2 bg-white overflow-x-hidden w-full hidden'>
+                    {suggest[0] ? 'Best match:'+suggest[0].Country : 'nothing found'}
                 </div>
             </form>
         </div>

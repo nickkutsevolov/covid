@@ -3,12 +3,12 @@ import React from 'react';
 function Row ({data}) {
     return (
         <tr>
-            <td>{ data.Country || 'Global' }</td>
-            <td className="text-right bg-gray-200">{ data.TotalConfirmed ? data.TotalConfirmed.toLocaleString() : "0" }<br />+{ data.NewConfirmed ? data.NewConfirmed.toLocaleString() : "0" }</td>
-            <td className="text-right">{ data.TotalDeaths ? data.TotalDeaths.toLocaleString() : "0" }<br />+{ data.NewDeaths ? data.NewDeaths.toLocaleString() : "0" }</td>
-            <td className="text-right bg-gray-200">{ data.TotalRecovered ? data.TotalRecovered.toLocaleString() : "0" }<br />+{ data.NewRecovered ? data.NewRecovered.toLocaleString() : "0" }</td>
-            <td className="text-right">{ (data.Lethality).toLocaleString() }%</td>
-            <td className="text-right bg-gray-200">{ (data.InfectionRate).toLocaleString() }</td>
+            <td className="bg-blue-200">{ data.Country }</td>
+            <td className="text-right bg-gray-200">{ data.TotalConfirmed.toLocaleString() }<br />+{ data.NewConfirmed.toLocaleString() }</td>
+            <td className="text-right bg-blue-200">{ data.TotalDeaths.toLocaleString() }<br />+{ data.NewDeaths.toLocaleString() }</td>
+            <td className="text-right bg-gray-200">{ data.TotalRecovered.toLocaleString() }<br />+{ data.NewRecovered.toLocaleString() }</td>
+            <td className="text-right bg-blue-200">{ data.Lethality.toLocaleString() }%</td>
+            <td className="text-right bg-gray-200">{ data.InfectionRate.toLocaleString() }%</td>
         </tr>
     )
 }

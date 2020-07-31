@@ -3,7 +3,7 @@ import useSummary from './useSummary';
 import Row from './Row';
 
 function Table() {
-    const api = useSummary();
+    const api = useSummary(false);
     const [data, setData] = useState([]);
     const [sort, setSort] = useState('');
     const [reverseSort, setReverseSort] = useState(false);
@@ -44,15 +44,15 @@ function Table() {
     }
 
     return (
-        <div className="container mx-auto p-4">
-            <table className="table-auto mx-auto">
+        <div className="container mx-auto">
+            <table className="table-auto mx-auto border rounded-lg overflow-hidden">
                 <thead>
                     <tr className="text-xl cursor-pointer" onClick={sortHandler}>
-                        <th className="px-4 py-2">Country ↓</th>
+                        <th className="px-4 py-2 bg-blue-200">Country ↓</th>
                         <th className="text-right px-4 py-2 bg-gray-200">Confirmed</th>
-                        <th className="text-right px-4 py-2">Deaths</th>
+                        <th className="text-right px-4 py-2 bg-blue-200">Deaths</th>
                         <th className="text-right px-4 py-2 bg-gray-200">Recovered</th>
-                        <th className="text-right px-4 py-2">Lethality</th>
+                        <th className="text-right px-4 py-2 bg-blue-200">Lethality</th>
                         <th className="text-right px-4 py-2 bg-gray-200">InfectionRate</th>
                     </tr>
                 </thead>

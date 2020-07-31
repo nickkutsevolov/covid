@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import PeriodSort from './PeriodSort';
-import Search from './Search';
+import Select from 'react-select';
 import useDayOne from './useDayOne';
+import useSummary from './useSummary';
 import { ComposedChart, Line, Bar, XAxis, YAxis, ResponsiveContainer, Tooltip, Legend, ReferenceLine  } from 'recharts';
 
 function TendencyChart () {
     const [country, setCountry] = useState(''); 
     const api = useDayOne(country);
+    const selectList = useSummary(true);
     const [data, setData] = useState([]);
     const [period, setPeriod] = useState('From day 1');
     
@@ -18,7 +20,14 @@ function TendencyChart () {
 
     return (
         <div className="container flex flex-col items-center mx-auto p-4">
-            <Search getResult={result => setCountry(result)}/>
+            <Select className="w-64"
+                placeholder="Select country..."
+                options={selectList.map(el => {
+                    return {value:el.Slug, label:el.Country}
+                    })} 
+                onChange={option => {if (option) setCountry(option.value)}}
+                isClearable={true}
+            />
             <PeriodSort sortBy={(sortValue) => setPeriod(sortValue)} />
             <ResponsiveContainer width='100%' height={400}>
                 <ComposedChart data={data}>

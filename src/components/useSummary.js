@@ -1,11 +1,12 @@
 import {useState, useEffect} from 'react';
 
-function useSummary () {
+function useSummary (namesOnly) {
     const [data, setData] = useState([]);
     useEffect(() => {
         fetch('https://api.covid19api.com/summary')
         .then(data => data.json())
         .then(data => {
+            namesOnly ? setData(data.Countries) :
             fetch('https://restcountries.eu/rest/v2/all?fields=alpha2Code;population')
             .then(popData => popData.json())
             .then(popData => {
@@ -15,12 +16,12 @@ function useSummary () {
                 data.Countries.forEach(el => {
                     if (el.CountryCode) el.Population = popData.find(popEl => popEl.alpha2Code === el.CountryCode).population;
                     el.Lethality = el.TotalDeaths/el.TotalConfirmed*100;
-                    el.InfectionRate = (~~(1000000/el.Population*el.TotalConfirmed));
+                    el.InfectionRate = el.TotalConfirmed/el.Population*100;
                 });
                 setData(data.Countries);
             })
         })               
-    }, []);
+    }, [namesOnly]);
 
     return (data)
 }
