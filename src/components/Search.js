@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import useSummary from './useSummary';
 
-function Search( {getResult}) {
+function Search( {getResult} ) {
     const api = useSummary();
     const [data, setData] = useState([]);
     const [suggest, setSuggest] = useState([]);

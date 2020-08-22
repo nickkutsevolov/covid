@@ -11,15 +11,15 @@ function Table() {
     useEffect(() => {
         setData(api.sort((a, b) => a.Country.localeCompare(b.Country)))        
     }, [api])
-
+    
     if (sort) {
-    sort === 'Country'   ? setData(api.sort((a, b) => a.Country.localeCompare(b.Country))) :
-    sort === 'Confirmed' ? setData(api.sort((a, b) => b.TotalConfirmed - a.TotalConfirmed)) :
-    sort === 'Deaths'    ? setData(api.sort((a, b) => b.TotalDeaths - a.TotalDeaths)) :
-    sort === 'Recovered' ? setData(api.sort((a, b) => b.TotalRecovered - a.TotalRecovered)) :
-    sort === 'Lethality' ? setData(api.sort((a, b) => b.Lethality - a.Lethality)) :
-                           setData(api.sort((a, b) => b.InfectionRate - a.InfectionRate));
-    setSort('');
+        sort === 'Country'   ? setData(api.sort((a, b) => a.Country.localeCompare(b.Country))) :
+        sort === 'Confirmed' ? setData(api.sort((a, b) => b.TotalConfirmed - a.TotalConfirmed)) :
+        sort === 'Deaths'    ? setData(api.sort((a, b) => b.TotalDeaths - a.TotalDeaths)) :
+        sort === 'Recovered' ? setData(api.sort((a, b) => b.TotalRecovered - a.TotalRecovered)) :
+        sort === 'Lethality' ? setData(api.sort((a, b) => b.Lethality - a.Lethality)) :
+                               setData(api.sort((a, b) => b.InfectionRate - a.InfectionRate));
+        setSort('');
     }
 
     if (reverseSort) {
