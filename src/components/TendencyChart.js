@@ -22,9 +22,7 @@ function TendencyChart () {
         <div className="container flex flex-col items-center mx-auto p-4">
             <Select className="w-64"
                 placeholder="Select country..."
-                options={selectList.map(el => {
-                    return {value:el.Slug, label:el.Country}
-                    })} 
+                options={selectList.map(el => ({value:el.Slug, label:el.Country}))} 
                 onChange={option => {if (option) setCountry(option.value)}}
                 isClearable={true}
             />
