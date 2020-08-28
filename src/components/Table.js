@@ -9,18 +9,22 @@ function Table() {
     const [sort, setSort] = useState('');
     const [reverseSort, setReverseSort] = useState(false);
     const [range, setRange] = useState([0,9]);
+    const [filter, setFilter] = useState('');
 
     useEffect(() => {
         setData(api.sort((a, b) => a.Country.localeCompare(b.Country)).map((el,index) => ({...el,Position:index+1})))
     }, [api])
     
     if (sort) {
-        sort === 'Country'   ? setData(api.sort((a, b) => a.Country.localeCompare(b.Country)).map((el,index) => ({...el,Position:index+1}))) :
-        sort === 'Confirmed' ? setData(api.sort((a, b) => b.TotalConfirmed - a.TotalConfirmed).map((el,index) => ({...el,Position:index+1}))) :
-        sort === 'Deaths'    ? setData(api.sort((a, b) => b.TotalDeaths - a.TotalDeaths).map((el,index) => ({...el,Position:index+1}))) :
-        sort === 'Recovered' ? setData(api.sort((a, b) => b.TotalRecovered - a.TotalRecovered).map((el,index) => ({...el,Position:index+1}))) :
-        sort === 'Lethality' ? setData(api.sort((a, b) => b.Lethality - a.Lethality).map((el,index) => ({...el,Position:index+1}))) :
-                               setData(api.sort((a, b) => b.InfectionRate - a.InfectionRate).map((el,index) => ({...el,Position:index+1})));
+        let sortedArray;
+        sort === 'Country'   ? sortedArray = api.sort((a, b) => a.Country.localeCompare(b.Country)) :
+        sort === 'Confirmed' ? sortedArray = api.sort((a, b) => b.TotalConfirmed - a.TotalConfirmed) :
+        sort === 'Deaths'    ? sortedArray = api.sort((a, b) => b.TotalDeaths - a.TotalDeaths) :
+        sort === 'Recovered' ? sortedArray = api.sort((a, b) => b.TotalRecovered - a.TotalRecovered) :
+        sort === 'Lethality' ? sortedArray = api.sort((a, b) => b.Lethality - a.Lethality) :
+                               sortedArray = api.sort((a, b) => b.InfectionRate - a.InfectionRate);
+        setData(sortedArray.map((el,index) => ({...el,Position:index+1}))
+                           .filter(el => el.Country.toLowerCase().match(/[A-Za-z]/g).join('').search(filter)>=0 ? el : false));
         setSort('');
     }
 
@@ -30,28 +34,35 @@ function Table() {
     }
 
     function sortHandler (e) {
-        if(e.target.innerHTML.includes('↓')) {
-            setReverseSort(true);
-            e.target.innerHTML = e.target.innerHTML.replace('↓', '↑')
-        }
-        else if(e.target.innerHTML.includes('↑')) {
-            setReverseSort(true);
-            e.target.innerHTML = e.target.innerHTML.replace('↑', '↓')
-        }
-        else {
-            e.target.parentNode.querySelectorAll('th').forEach(el => {if(el.innerHTML.match(/↓|↑/g)) el.innerHTML = el.innerHTML.match(/[A-Za-z]*/)[0]});
-            e.target.innerHTML = e.target.innerHTML+' ↓';
-            setSort(e.target.innerHTML.match(/[A-Za-z]*/)[0])
+        if (e.target.innerHTML !== '#') {
+            if(e.target.innerHTML.includes('↓')) {
+                setReverseSort(true);
+                e.target.innerHTML = e.target.innerHTML.replace('↓', '↑')
+            }
+            else if(e.target.innerHTML.includes('↑')) {
+                setReverseSort(true);
+                e.target.innerHTML = e.target.innerHTML.replace('↑', '↓')
+            }
+            else {
+                e.target.parentNode.querySelectorAll('th').forEach(el => {if(el.innerHTML.match(/↓|↑/g)) el.innerHTML = el.innerHTML.match(/[A-Za-z]*/)[0]});
+                e.target.innerHTML = e.target.innerHTML+' ↓';
+                setSort(e.target.innerHTML.match(/[A-Za-z]*/)[0])
+            }
         }
     }
-    console.log(data)
+
+    function filterHandler (filter) {
+        setFilter(filter);
+        setSort([...document.getElementsByTagName('th')].filter(el => el.innerText.match(/[↑↓]/g))[0].innerText.split(" ", 2)[0])
+    }
+
     return (
         <div className="container mx-auto">
-            <Pagination lines={data.length}  getRange={range => setRange(range)}/>
+            <Pagination lines={data.length}  getRange={range => setRange(range)} getFilter={filterHandler}/>
             <table className="table-auto mx-auto border rounded-lg overflow-hidden">
                 <thead>
                     <tr className="text-xl cursor-pointer" onClick={sortHandler}>
-                        <th className="text-right px-4 py-2 bg-gray-200">#</th>
+                        <th className="text-right px-4 py-2 bg-gray-200 cursor-default">#</th>
                         <th className="px-4 py-2 bg-blue-200">Country ↓</th>
                         <th className="text-right px-4 py-2 bg-gray-200">Confirmed</th>
                         <th className="text-right px-4 py-2 bg-blue-200">Deaths</th>

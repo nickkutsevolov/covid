@@ -3,7 +3,7 @@ import PeriodSort from './PeriodSort';
 import Select from 'react-select';
 import useDayOne from './useDayOne';
 import useSummary from './useSummary';
-import { ComposedChart, Line, Bar, XAxis, YAxis, ResponsiveContainer, Tooltip, Legend, ReferenceLine  } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Tooltip, Legend, ReferenceLine  } from 'recharts';
 
 function TendencyChart () {
     const [country, setCountry] = useState(''); 
@@ -28,7 +28,7 @@ function TendencyChart () {
             />
             <PeriodSort sortBy={(sortValue) => setPeriod(sortValue)} />
             <ResponsiveContainer width='100%' height={400}>
-                <ComposedChart data={data}>
+                <BarChart data={data}>
                     <XAxis dataKey="Date" />
                     <YAxis />
                     <Tooltip />
@@ -37,8 +37,8 @@ function TendencyChart () {
                     <Bar dataKey="NewConfirmed" stackId="1" fill="dimgrey" />
                     <Bar dataKey="NewRecovered" stackId="1" fill="cadetblue" />
                     <Bar dataKey="NewDeaths" stackId="1" fill="crimson" />
-                    <Line dataKey="Tendency" stroke="black" />
-                </ComposedChart>
+                    {/* <Line dataKey="Tendency" stroke="black" /> */}
+                </BarChart>
             </ResponsiveContainer>
         </div>
     )

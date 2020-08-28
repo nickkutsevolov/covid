@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 
-function Pagination ({lines,getRange}) {
+function Pagination ({lines,getRange,getFilter}) {
     const [currentPage, setCurrentPage] = useState(1);
     const [controls, setControls] = useState([1]);
     const [pages, setPages] = useState(0);
@@ -23,7 +23,6 @@ function Pagination ({lines,getRange}) {
         }
         setFlag(false);
     }
-    console.log('pages:',pages," currentPage:",currentPage, 'flag:',flag,'linesPerPage:',linesPerPage)
     
     function handler (value) {
         if (value.length<9 && value!=='...') {
@@ -53,6 +52,10 @@ function Pagination ({lines,getRange}) {
                     <option>15</option>
                     <option>20</option>
                 </select>
+            </div>
+            <div className="inline-block px-2 h-8 mx-1 leading-7 rounded-full text-center bg-blue-200">
+                <span>Filter by name:</span>
+                <input  className="bg-transparent border-b border-black" onChange={e => e.target.value.match(/[A-Za-z]/g) ? getFilter(e.target.value.match(/[A-Za-z]/g).join('').toLowerCase()) : getFilter(/[A-Za-z]/g) }/>
             </div>
         </div>
     );
