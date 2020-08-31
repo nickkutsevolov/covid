@@ -58,7 +58,7 @@ function Table() {
 
     return (
         <div className="container mx-auto">
-            <Pagination lines={data.length}  getRange={range => setRange(range)} getFilter={filterHandler}/>
+            <Pagination rows={data.length}  getRange={range => setRange(range)} getFilter={filterHandler}/>
             <table className="table-auto mx-auto border rounded-lg overflow-hidden">
                 <thead>
                     <tr className="text-xl cursor-pointer" onClick={sortHandler}>

@@ -28,7 +28,7 @@ function TendencyChart () {
             />
             <PeriodSort sortBy={(sortValue) => setPeriod(sortValue)} />
             <ResponsiveContainer width='100%' height={400}>
-                <BarChart data={data}>
+                <BarChart data={data} stackOffset="sign">
                     <XAxis dataKey="Date" />
                     <YAxis />
                     <Tooltip />
@@ -37,7 +37,6 @@ function TendencyChart () {
                     <Bar dataKey="NewConfirmed" stackId="1" fill="dimgrey" />
                     <Bar dataKey="NewRecovered" stackId="1" fill="cadetblue" />
                     <Bar dataKey="NewDeaths" stackId="1" fill="crimson" />
-                    {/* <Line dataKey="Tendency" stroke="black" /> */}
                 </BarChart>
             </ResponsiveContainer>
         </div>
