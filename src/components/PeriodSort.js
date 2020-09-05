@@ -3,20 +3,20 @@ import React from 'react';
 function PeriodSort ({sortBy}) {
 
     function periodChange (e) {
-        if (!e.target.classList.contains('selected')) {
-            e.target.parentNode.querySelector('.selected').classList.add('cursor-pointer', 'bg-neutral');
-            e.target.parentNode.querySelector('.selected').classList.remove('bg-primary', 'selected');
-            e.target.classList.remove('cursor-pointer', 'bg-neutral');
-            e.target.classList.add('bg-primary', 'selected');
+        if (!e.target.classList.contains('bg-gray-600')) {
+            e.target.parentNode.querySelector('.bg-gray-600').classList.add('cursor-pointer', 'hover:bg-gray-300');
+            e.target.parentNode.querySelector('.bg-gray-600').classList.remove('bg-gray-600', 'text-white');
+            e.target.classList.remove('cursor-pointer', 'hover:bg-gray-300');
+            e.target.classList.add('bg-gray-600', 'text-white');
             sortBy(e.target.innerText);
         }
     }
 
     return(
-        <div className="flex flex-row rounded h-auto my-4 text-white overflow-hidden" onClick={periodChange}>
-            <div className="p-2 hover:bg-primary bg-primary selected">From day 1</div>
-            <div className="p-2 hover:bg-primary bg-neutral cursor-pointer border border-t-0 border-b-0">Last month</div>
-            <div className="p-2 hover:bg-primary bg-neutral cursor-pointer">Last 10 days</div>
+        <div className="flex flex-row rounded h-auto overflow-hidden ml-8 border text-sm" onClick={periodChange}>
+            <div className="p-2 bg-gray-600 text-white">From day 1</div>
+            <div className="p-2 hover:bg-gray-300 cursor-pointer border border-t-0 border-b-0">Last month</div>
+            <div className="p-2 hover:bg-gray-300 cursor-pointer">Last 10 days</div>
         </div>
     )
 }

@@ -19,14 +19,16 @@ function TendencyChart () {
     }, [api, period])
 
     return (
-        <div className="container flex flex-col items-center mx-auto p-4">
-            <Select className="w-64"
-                placeholder="Select country..."
-                options={selectList.map(el => ({value:el.Slug, label:el.Country}))} 
-                onChange={option => {if (option) setCountry(option.value)}}
-                isClearable={true}
-            />
-            <PeriodSort sortBy={(sortValue) => setPeriod(sortValue)} />
+        <div className="container flex flex-col items-center mx-auto p-12 w-2/3 rounded-lg bg-white">
+            <div className="flex flex-row items-center justify-center w-full">
+                <Select className="w-64"
+                    placeholder="Select country..."
+                    options={selectList.map(el => ({value:el.Slug, label:el.Country}))}
+                    onChange={option => {if (option) setCountry(option.value)}}
+                    isClearable={true}
+                />
+                <PeriodSort sortBy={(sortValue) => setPeriod(sortValue)} />
+            </div>
             <ResponsiveContainer width='100%' height={400}>
                 <BarChart data={data} stackOffset="sign">
                     <XAxis dataKey="Date" />
