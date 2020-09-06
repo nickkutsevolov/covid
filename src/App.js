@@ -12,6 +12,10 @@ function App() {
           <h3 className="text-4xl">Stay Home. Stay Safe.</h3>
         </div>
       </div>
+      <div className="w-1/2 m-auto my-16">
+        <h3 className="text-4xl text-center text-red-400">What's COVID and what should we do</h3>
+        <p className="text-l">Exercitation minim ex occaecat pariatur ex sit consectetur Lorem consequat pariatur ipsum nostrud. Duis sunt cillum in dolor anim quis anim deserunt labore laborum aute ea quis. In id nisi quis labore pariatur aliqua cillum voluptate qui eiusmod fugiat est. Nisi laborum incididunt excepteur eiusmod ipsum elit.</p>
+      </div>
       <div className="flex m-16">
         <div className="w-1/3 p-12">
           <h3 className="text-4xl text-center text-red-400">Total Chart</h3>
