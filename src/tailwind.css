@@ -10,7 +10,7 @@ th, td {
     @apply font-normal;
 }
 .bg-hero {
-    background: url('./img/hero.jpg') center top/cover no-repeat;
+    background: url('./img/hero.jpg') 25% top/cover no-repeat;
 }
 
 @tailwind components;

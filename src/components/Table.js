@@ -57,18 +57,18 @@ function Table() {
     }
 
     return (
-        <div className="container mx-auto max-w-6xl">
+        <div className="container m-16 w-auto">
             <Pagination rows={data.length}  getRange={range => setRange(range)} getFilter={filterHandler}/>
             <table className="w-full table-auto border rounded-lg overflow-hidden bg-white my-2">
                 <thead>
                     <tr className="text-gray-600 cursor-pointer" onClick={sortHandler}>
-                        <th className="font-normal text-right px-4 py-2 cursor-default w-16">#</th>
-                        <th className="font-normal px-4 py-2 text-left">Country ↓</th>
-                        <th className="font-normal text-right px-4 py-2">Confirmed</th>
-                        <th className="font-normal text-right px-4 py-2">Deaths</th>
-                        <th className="font-normal text-right px-4 py-2">Recovered</th>
-                        <th className="font-normal text-right px-4 py-2">Lethality</th>
-                        <th className="font-normal text-right px-4 py-2">InfectionRate</th>
+                        <th className="font-normal text-right py-2 cursor-default w-16">#</th>
+                        <th className="font-normal py-2 text-left">Country ↓</th>
+                        <th className="font-normal text-right py-2">Confirmed</th>
+                        <th className="font-normal text-right py-2">Deaths</th>
+                        <th className="font-normal text-right py-2">Recovered</th>
+                        <th className="font-normal text-right py-2">Lethality</th>
+                        <th className="font-normal text-right py-2">InfectionRate</th>
                     </tr>
                 </thead>
                 <tbody>
