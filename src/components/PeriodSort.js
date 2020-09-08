@@ -9,14 +9,15 @@ function PeriodSort ({sortBy}) {
             e.target.classList.remove('cursor-pointer', 'hover:bg-gray-300');
             e.target.classList.add('bg-gray-600', 'text-white');
             sortBy(e.target.innerText);
+            e.target.blur();
         }
     }
 
     return(
-        <div className="flex flex-row rounded h-auto overflow-hidden ml-8 border text-sm" onClick={periodChange}>
-            <div className="p-2 bg-gray-600 text-white">From day 1</div>
-            <div className="p-2 hover:bg-gray-300 cursor-pointer border border-t-0 border-b-0">Last month</div>
-            <div className="p-2 hover:bg-gray-300 cursor-pointer">Last 10 days</div>
+        <div className="flex flex-row rounded h-auto overflow-hidden ml-8 border text-sm" onClick={periodChange} onKeyPress={e => {if (e.which===13) periodChange(e); console.log(e.which)}}>
+            <div tabIndex="0" className="p-2 bg-gray-600 text-white">From day 1</div>
+            <div tabIndex="0" className="p-2 hover:bg-gray-300 cursor-pointer border border-t-0 border-b-0">Last month</div>
+            <div tabIndex="0" className="p-2 hover:bg-gray-300 cursor-pointer">Last 10 days</div>
         </div>
     )
 }
