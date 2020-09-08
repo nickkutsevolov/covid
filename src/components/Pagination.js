@@ -37,14 +37,14 @@ function Pagination({ rows, getRange, getFilter }) {
     return (
         <div className='flex justify-between'>
             <div>
-                <div class="relative">
-			    	<input type="search" class="w-full pl-10 pr-4 py-2 rounded-lg shadow focus:outline-none focus:shadow-outline text-gray-600 font-medium" placeholder="Search..." onChange={e => {
+                <div className="relative">
+			    	<input type="search" className="w-full pl-10 pr-4 py-2 rounded-lg shadow focus:outline-none focus:shadow-outline text-gray-600 font-medium" placeholder="Search..." onChange={e => {
                         if (e.target.value.match(/[A-Za-z]/g)) {
                             getFilter(e.target.value.match(/[A-Za-z]/g).join('').toLowerCase());
                             setCurrentPage(1);
                         } else getFilter(/[A-Za-z]/g)}}/>
-			    	<div class="absolute top-0 left-0 inline-flex items-center p-2">
-			    		<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-400" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+			    	<div className="absolute top-0 left-0 inline-flex items-center p-2">
+			    		<svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-gray-400" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
 			    			<rect x="0" y="0" width="24" height="24" stroke="none"></rect>
 			    			<circle cx="10" cy="10" r="7"></circle>
 			    			<line x1="21" y1="21" x2="15" y2="15"></line>
