@@ -9,13 +9,13 @@ function App() {
       <div className="w-full h-screen flex items-center">
         <div className="w-3/5 h-full bg-hero" />
         <div className="w-2/5 h-full bg-white grid p-12">
-          <div className="w-full flex text-lg justify-around">
-            <div className="cursor-pointer">COVID-19</div>
-            <div className="cursor-pointer">Total Chart</div>
-            <div className="cursor-pointer">Tendency Chart</div>
-            <div className="cursor-pointer">Table</div>
+          <div className="w-full flex text-lg justify-between">
+            <span className="border-b-2 border-white cursor-pointer h-8 hover:border-black">COVID-19</span>
+            <span className="border-b-2 border-white cursor-pointer h-8 hover:border-black">Total Chart</span>
+            <span className="border-b-2 border-white cursor-pointer h-8 hover:border-black">Tendency Chart</span>
+            <span className="border-b-2 border-white cursor-pointer h-8 hover:border-black">Table</span>
           </div>
-          <div className="w-full font-normal">
+          <div className="w-full">
             <h1 className="text-5xl">COVID-19 PANDEMIC</h1>
             <h3 className="text-4xl">Stay Home. Stay Safe.</h3>
           </div>
