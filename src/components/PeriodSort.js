@@ -14,10 +14,10 @@ function PeriodSort ({sortBy}) {
     }
 
     return(
-        <div className="flex flex-row rounded h-auto overflow-hidden ml-8 border text-sm" onClick={periodChange} onKeyPress={e => {if (e.which===13) periodChange(e); console.log(e.which)}}>
-            <div tabIndex="0" className="p-2 bg-gray-600 text-white">From day 1</div>
-            <div tabIndex="0" className="p-2 hover:bg-gray-300 cursor-pointer border border-t-0 border-b-0">Last month</div>
-            <div tabIndex="0" className="p-2 hover:bg-gray-300 cursor-pointer">Last 10 days</div>
+        <div className="flex flex-row rounded h-auto overflow-hidden border leading-7" onClick={periodChange} onKeyPress={e => {if (e.which===13) periodChange(e); console.log(e.which)}}>
+            <div tabIndex="0" className="px-2 py-1 bg-gray-600 text-white">From day 1</div>
+            <div tabIndex="0" className="px-2 py-1 hover:bg-gray-300 cursor-pointer border-l border-r">Last month</div>
+            <div tabIndex="0" className="px-2 py-1 hover:bg-gray-300 cursor-pointer">Last 10 days</div>
         </div>
     )
 }

@@ -11,7 +11,7 @@ import population from './lockdown/population';
 //                 x.forEach(el => {
 //                     el.Population = population().find(popEl => popEl.alpha2Code === el.CountryCode).population;
 //                     el.Lethality = el.TotalDeaths/el.TotalConfirmed*100;
-//                     el.InfectionRate = el.TotalConfirmed/el.Population*100;
+//                     el.Morbidity = el.TotalConfirmed/el.Population*100;
 //                 });
 //                 setData(x);
 //             }
@@ -35,7 +35,7 @@ function useSummary (namesOnly) {
                 data.Countries.forEach(el => {
                     if (el.CountryCode) el.Population = popData.find(popEl => popEl.alpha2Code === el.CountryCode).population;
                     el.Lethality = el.TotalDeaths/el.TotalConfirmed*100;
-                    el.InfectionRate = el.TotalConfirmed/el.Population*100;
+                    el.Morbidity = el.TotalConfirmed/el.Population*100;
                 });
                 setData(data.Countries);
             })

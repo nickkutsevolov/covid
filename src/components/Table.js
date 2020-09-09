@@ -22,7 +22,7 @@ function Table() {
         sort === 'Deaths'    ? sortedArray = api.sort((a, b) => b.TotalDeaths - a.TotalDeaths) :
         sort === 'Recovered' ? sortedArray = api.sort((a, b) => b.TotalRecovered - a.TotalRecovered) :
         sort === 'Lethality' ? sortedArray = api.sort((a, b) => b.Lethality - a.Lethality) :
-                               sortedArray = api.sort((a, b) => b.InfectionRate - a.InfectionRate);
+                               sortedArray = api.sort((a, b) => b.Morbidity - a.Morbidity);
         setData(sortedArray.map((el,index) => ({...el,Position:index+1}))
                            .filter(el => el.Country.toLowerCase().match(/[A-Za-z]/g).join('').search(filter)>=0 ? el : false));
         setSort('');
@@ -68,7 +68,7 @@ function Table() {
                         <th className="font-normal text-right py-2">Deaths</th>
                         <th className="font-normal text-right py-2">Recovered</th>
                         <th className="font-normal text-right py-2">Lethality</th>
-                        <th className="font-normal text-right py-2">InfectionRate</th>
+                        <th className="font-normal text-right py-2">Morbidity</th>
                     </tr>
                 </thead>
                 <tbody>

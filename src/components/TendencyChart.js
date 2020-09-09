@@ -6,7 +6,7 @@ import useSummary from './useSummary';
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Tooltip, Legend, ReferenceLine  } from 'recharts';
 
 function TendencyChart () {
-    const [country, setCountry] = useState(''); 
+    const [country, setCountry] = useState('belarus'); 
     const api = useDayOne(country);
     const selectList = useSummary(true);
     const [data, setData] = useState([]);
@@ -20,7 +20,7 @@ function TendencyChart () {
 
     return (
         <div className="container flex flex-col items-center mx-auto p-12 w-2/3 rounded-lg bg-white">
-            <div className="flex flex-row items-center justify-center w-full">
+            <div className="flex flex-row justify-between w-full pl-16 pr-1">
                 <Select className="w-64"
                     placeholder="Select country..."
                     options={selectList.map(el => ({value:el.Slug, label:el.Country}))}
