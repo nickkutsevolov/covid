@@ -48,6 +48,7 @@ function Table() {
                 e.target.innerHTML = e.target.innerHTML+' ↓';
                 setSort(e.target.innerHTML.match(/[A-Za-z]*/)[0])
             }
+            [...document.querySelectorAll('th,td')].filter(el => el.classList.contains("bg-gray-100")).forEach(el => el.classList.remove("bg-gray-100"));
         }
     }
 
@@ -56,12 +57,22 @@ function Table() {
         setSort([...document.getElementsByTagName('th')].filter(el => el.innerText.match(/[↑↓]/g))[0].innerText.split(" ", 2)[0])
     }
 
+    function hoverHandler (e) {
+        let col = [...e.target.parentNode.children].indexOf(e.target);
+        [...document.querySelectorAll('th,td')].filter(el => el.classList.contains("bg-gray-100")).forEach(el => el.classList.remove("bg-gray-100"))
+        if (col) document.querySelectorAll('th,td').forEach(el => [...el.parentNode.children].indexOf(el) === col ? el.classList.add("bg-gray-100") : 0);
+    }
+
+    function mouseLeaveHandler () {
+        [...document.querySelectorAll('th,td')].filter(el => el.classList.contains("bg-gray-100")).forEach(el => el.classList.remove("bg-gray-100"));
+    }
+
     return (
         <div className="container m-16 w-auto">
             <Pagination rows={data.length}  getRange={range => setRange(range)} getFilter={filterHandler}/>
             <table className="w-full table-auto border rounded-lg overflow-hidden bg-white my-2">
                 <thead>
-                    <tr className="text-gray-600 cursor-pointer" onClick={sortHandler}>
+                    <tr className="text-gray-600 cursor-pointer" onClick={sortHandler} onMouseMove={hoverHandler} onMouseLeave={mouseLeaveHandler}>
                         <th className="font-normal text-right py-2 cursor-default w-16">#</th>
                         <th className="font-normal py-2 text-left">Country ↓</th>
                         <th className="font-normal text-right py-2">Confirmed</th>

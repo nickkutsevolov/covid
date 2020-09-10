@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import PeriodSort from './PeriodSort';
+import SpanSort from './SpanSort';
 import Select from 'react-select';
 import useDayOne from './useDayOne';
 import useSummary from './useSummary';
@@ -10,24 +10,24 @@ function TendencyChart () {
     const api = useDayOne(country);
     const selectList = useSummary(true);
     const [data, setData] = useState([]);
-    const [period, setPeriod] = useState('From day 1');
+    const [span, setSpan] = useState('From day 1');
     
     useEffect(() => {
-        period==='From day 1' ? setData(api):
-        period==='Last month' ? setData(api.slice(-31)):
+        span==='From day 1' ? setData(api):
+        span==='Last month' ? setData(api.slice(-31)):
         setData(api.slice(-10));
-    }, [api, period])
+    }, [api, span])
 
     return (
         <div className="container flex flex-col items-center mx-auto p-12 w-2/3 rounded-lg bg-white">
-            <div className="flex flex-row justify-between w-full pl-16 pr-1">
+            <div className="flex flex-row justify-between w-full pl-16 pr-1 mb-6">
                 <Select className="w-64"
-                    placeholder="Select country..."
+                    placeholder={country==="belarus" ? "Belarus" : "Select country..."}
                     options={selectList.map(el => ({value:el.Slug, label:el.Country}))}
                     onChange={option => {if (option) setCountry(option.value)}}
                     isClearable={true}
                 />
-                <PeriodSort sortBy={(sortValue) => setPeriod(sortValue)} />
+                <SpanSort sortBy={(sortValue) => setSpan(sortValue)} />
             </div>
             <ResponsiveContainer width='100%' height={400}>
                 <BarChart data={data} stackOffset="sign">
@@ -36,9 +36,9 @@ function TendencyChart () {
                     <Tooltip />
                     <Legend />
                     <ReferenceLine y={0} stroke="#000" />
-                    <Bar dataKey="NewConfirmed" stackId="1" fill="dimgrey" />
-                    <Bar dataKey="NewRecovered" stackId="1" fill="cadetblue" />
-                    <Bar dataKey="NewDeaths" stackId="1" fill="crimson" />
+                    <Bar dataKey="NewConfirmed" stackId="1" fill="#718096" />
+                    <Bar dataKey="NewRecovered" stackId="1" fill="#319795" />
+                    <Bar dataKey="NewDeaths" stackId="1" fill="#e53e3e" />
                 </BarChart>
             </ResponsiveContainer>
         </div>
