@@ -1,23 +1,4 @@
 import {useState, useEffect} from 'react';
-import covid from './lockdown/covid';
-import population from './lockdown/population';
-
-// function useSummary (namesOnly) {
-//     const [data, setData] = useState([]);
-//     useEffect(() => {
-//             if (namesOnly) {setData(covid().Countries)} 
-//             else {
-//                 let x=covid().Countries;
-//                 x.forEach(el => {
-//                     el.Population = population().find(popEl => popEl.alpha2Code === el.CountryCode).population;
-//                     el.Lethality = el.TotalDeaths/el.TotalConfirmed*100;
-//                     el.Morbidity = el.TotalConfirmed/el.Population*100;
-//                 });
-//                 setData(x);
-//             }
-//         }, [namesOnly])
-//     return (data)
-// }
 
 function useSummary (namesOnly) {
     const [data, setData] = useState([]);

@@ -48,7 +48,7 @@ function Table() {
             else {
                 e.target.parentNode.querySelectorAll('th').forEach(el => {if(el.innerHTML.match(/↓|↑/g)) el.innerHTML = el.innerHTML.match(/[A-Za-z]*/)[0]});
                 e.target.innerHTML = e.target.innerHTML+' ↓';
-                setSort(e.target.innerHTML.match(/[A-Za-z]*/)[0])
+                setSort(e.target.innerHTML.match(/[A-Za-z]*/)[0]);
             }
             [...document.querySelectorAll('th,td')].filter(el => el.classList.contains("bg-gray-100")).forEach(el => el.classList.remove("bg-gray-100"));
         }
@@ -59,43 +59,12 @@ function Table() {
         setSort([...document.getElementsByTagName('th')].filter(el => el.innerText.match(/[↑↓]/g))[0].innerText.split(" ", 2)[0])
     }
 
-    // function hoverHandler (e) {
-    //     if (document.querySelector('#tooltip')) document.querySelector('#tooltip').remove();
-    //     [...document.querySelectorAll('th,td')].filter(el => el.classList.contains("bg-gray-100")).forEach(el => el.classList.remove("bg-gray-100"))
-    //     let col = [...e.target.parentNode.children].indexOf(e.target);
-    //     if (col) {
-    //         document.querySelectorAll('th,td').forEach(el => {if([...el.parentNode.children].indexOf(el) === col) el.classList.add("bg-gray-100")});
-    //         let tooltip = document.createElement('div');
-    //         tooltip.id = "tooltip";
-    //         tooltip.classList.add('p-2', 'rounded', 'bg-white', 'absolute', 'border');
-    //         tooltip.innerText = 'Click to sort by country';
-    //         tooltip.style.left = `${e.pageX}px`;
-    //         tooltip.style.top = `${e.pageY-50}px`;
-    //         document.body.appendChild(tooltip);
-    //         console.log(e.target.innerText.match(/↓|↑/g))
-    //     }
-    // }
-
-    // function mouseLeaveHandler () {
-    //     if (document.querySelector('#tooltip')) document.querySelector('#tooltip').remove();
-    //     [...document.querySelectorAll('th,td')].filter(el => el.classList.contains("bg-gray-100")).forEach(el => el.classList.remove("bg-gray-100"));
-    // }
-
     return (
-        <div className="container m-16 w-auto">
+        <div id='table' className="container m-16 w-auto">
             <Pagination rows={data.length}  getRange={range => setRange(range)} getFilter={filterHandler}/>
             <table className="w-full table-auto border rounded-lg overflow-hidden bg-white my-2">
                 <thead onClick={sortHandler}>
                     <TableHead />
-                    {/* <tr className="text-gray-600 cursor-pointer" onMouseMove={hoverHandler} onMouseLeave={mouseLeaveHandler}>
-                        <th className="text-right py-2 cursor-default w-16">#</th>
-                        <th className="text-left py-2">Country ↓</th>
-                        <th className="text-right py-2">Confirmed</th>
-                        <th className="text-right py-2">Deaths</th>
-                        <th className="text-right py-2">Recovered</th>
-                        <th className="text-right py-2">Lethality</th>
-                        <th className="text-right py-2">Morbidity</th>
-                    </tr> */}
                 </thead>
                 <tbody>
                     {data.length ? data.slice(range[0],range[1]).map((el, index) => <TableRow data={el} key={el.CountryCode + index} />) : <></>}

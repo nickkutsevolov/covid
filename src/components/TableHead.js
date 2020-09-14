@@ -38,17 +38,15 @@ function TableHead () {
     }
 
     return (
-        // <thead onClick={sortHandler}>
-            <tr className="text-gray-600 cursor-pointer" onMouseMove={hoverHandler} onMouseLeave={mouseLeaveHandler}>
-                <th className="text-right py-2 cursor-default w-16">#</th>
-                <th className="text-left py-2">Country ↓</th>
-                <th className="text-right py-2">Confirmed</th>
-                <th className="text-right py-2">Deaths</th>
-                <th className="text-right py-2">Recovered</th>
-                <th className="text-right py-2">Lethality</th>
-                <th className="text-right py-2">Morbidity</th>
-            </tr>
-        // </thead>
+        <tr className="text-gray-600 cursor-pointer" onMouseMove={hoverHandler} onMouseLeave={mouseLeaveHandler}>
+            <th className="text-right py-2 cursor-default w-16">#</th>
+            <th className="text-left py-2">Country ↓</th>
+            <th className="text-right py-2">Confirmed</th>
+            <th className="text-right py-2">Deaths</th>
+            <th className="text-right py-2">Recovered</th>
+            <th className="text-right py-2">Lethality</th>
+            <th className="text-right py-2">Morbidity</th>
+        </tr>
     );
 }
 
