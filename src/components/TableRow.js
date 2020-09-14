@@ -1,8 +1,16 @@
 import React from 'react';
 
-function Row ({data}) {
+function TableRow ({data}) {
+    function hoverHandler (e) {
+        [...e.target.parentNode.children].forEach(el => el.classList.add("bg-gray-100"));
+    }
+
+    function mouseLeaveHandler (e) {
+        [...e.target.parentNode.children].forEach(el => el.classList.remove("bg-gray-100"));
+    }
+
     return (
-        <tr>
+        <tr onMouseEnter={hoverHandler} onMouseLeave={mouseLeaveHandler}>
             <td className="text-right w-16 text-gray-600">{data.Position}</td>
             <td className="font-semibold">{ data.Country }</td>
             <td className="text-right">{ data.TotalConfirmed.toLocaleString() }<br /><span className="text-xs text-gray-600">+{ data.NewConfirmed.toLocaleString() }</span></td>
@@ -14,4 +22,4 @@ function Row ({data}) {
     )
 }
 
-export default Row;
+export default TableRow;
