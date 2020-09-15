@@ -28,7 +28,6 @@ function TableHead () {
             let tooltipHeight = parseInt(window.getComputedStyle(tooltip).getPropertyValue('height'));
             tooltip.style.left = `${e.pageX+tooltipWidth>document.body.clientWidth ? document.body.clientWidth-tooltipWidth : e.pageX}px`;
             tooltip.style.top = `${e.clientY>tooltipHeight+10 ? e.pageY-tooltipHeight-10 : e.pageY+32}px`;
-            console.log(e.clientY)
         }
     }
 

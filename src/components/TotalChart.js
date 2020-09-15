@@ -19,7 +19,7 @@ function TotalChart () {
     }, [api, span])
 
     return (
-        <div className="container flex flex-col items-center mx-auto p-12 w-2/3 rounded-lg bg-white">
+        <div className="flex flex-col items-center mx-auto p-12 w-2/3 rounded-lg bg-white">
             <div className="flex flex-row justify-between w-full pl-16 pr-1 mb-6">
                 <Select className="w-64"
                     placeholder={country==="belarus" ? "Belarus" : "Select country..."}

@@ -10,6 +10,7 @@ function useSummary (namesOnly) {
             fetch('https://restcountries.eu/rest/v2/all?fields=alpha2Code;population')
             .then(popData => popData.json())
             .then(popData => {
+                if (!data.Countries) document.write('Covid API data is unavailable. Please try later.')
                 data.Countries.unshift(data.Global);
                 data.Countries[0].Country = 'Global';
                 data.Countries[0].Population = popData.reduce( (total,country) => total + country.population,0);

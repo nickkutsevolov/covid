@@ -60,7 +60,7 @@ function Table() {
     }
 
     return (
-        <div id='table' className="container m-16 w-auto">
+        <div id='table' className="container my-16 mx-auto py-16">
             <Pagination rows={data.length}  getRange={range => setRange(range)} getFilter={filterHandler}/>
             <table className="w-full table-auto border rounded-lg overflow-hidden bg-white my-2">
                 <thead onClick={sortHandler}>
