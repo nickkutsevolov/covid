@@ -19,7 +19,7 @@ function useSummary (namesOnly) {
                     el.Lethality = el.TotalDeaths/el.TotalConfirmed*100;
                     el.Morbidity = el.TotalConfirmed/el.Population*100;
                 });
-                setData(data.Countries);
+                setData(data.Countries.filter(el => el.TotalConfirmed));
             })
         })               
     }, [namesOnly]);
