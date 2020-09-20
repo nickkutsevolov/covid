@@ -41,7 +41,7 @@ function App() {
       <div className="container flex my-16 mx-auto py-16">
         <div id='totalChart' className="w-1/3 p-12">
           <h3 className="text-4xl text-red-400">Total Chart</h3>
-          <p className="text-l">This chart shows the total number of COVID&#8209;19 cases by day. You can select a country from the dropdown list and specify a timespan selecting one of the options. By the thickness of the gray area you can see the proportionate amount of active cases to its total. Hover the chart to see the exact numbers by day. Please note that some countries do not provide full COVID&#8209;19 statistics.</p>
+          <p className="text-l">This chart shows the total number of COVID&#8209;19 cases by day. You can select a country from the dropdown list and specify a timespan selecting one of the options. By the thickness of the gray area you can see the proportionate number of active cases to its total. Hover the chart to see the exact numbers by day. Please note that some countries do not provide full COVID&#8209;19 statistics.</p>
         </div>
         <TotalChart />
       </div>
